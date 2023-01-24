@@ -3,7 +3,10 @@
 
 ##	What is Machu Picchu?
 Machu Picchu is a decentralized and trusted social network, where the Persons-in-Need ("**PnD**") post their profiles, their activities, their needs, while keeping ownership of their data. 
+
 Using Machu Picchu, all services to the **PnD** can use this trusted social network to provide assistance to these beneficiaies via decentralized protocols and smart contracts.
+
+Watch the 1-minute video here: https://youtu.be/joPwVTsLojU
 
 ##	Reading guide
 This white paper can also be read in a reverse way, as a tutorial to learn coding blockchain, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions.
