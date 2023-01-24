@@ -243,4 +243,4 @@ Source code here:
 -	Risk-Sharing: https://github.com/cifunibas/decentralized-insurance
 
 # Where do we go from here?
-Here ends the White paper of Machu Picchu. If you are convinced, Continue reading. The next step is the coding tutorial using Machu Picchu as an application theme.
+Here ends the White paper of Machu Picchu. If you are convinced, Continue reading. The next step is the coding tutorial using Machu Picchu as an application theme. [*Tutorial Link*](./README_2.md)
