@@ -1,7 +1,7 @@
 # Project-Blockchain coding tutorial & Machu Picchu White Paper
 *(version January 2023)*
 
-Are you interested in blockchain programming, but hesitate to start, not being a programmer? or maybe you are IT project manager or higher IT executive? I was like you in 2016 and this post is what I wished have existed. It is a Full-Stack tutorial, showing how to code a smart contract in Solidity, deploy it on a testnet, code a JavaScript frontend with React, deploy it for a public access.
+Are you interested in blockchain programming, but hesitate to start, not being a programmer? or maybe you are IT project manager or higher IT executive? I was like you in 2016 and this post is what I wished have existed. You are reading a Full-Stack tutorial, showing how to code a smart contract in Solidity, deploy it on a testnet, code a JavaScript frontend with React, deploy it for a public access.
 
 - *What makes this tutorial different from the others is that it implements a real-life application, a humanitarian assistance project Machu Picchu. As such, this humanitarian initiative is described in depth.*
 
