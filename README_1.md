@@ -162,7 +162,7 @@ In addition to the assistance purpose, among many others, one can consider finan
 Important points such quality of the data, reputation of the sponsor persons and of the village, incentive to operate a data storage node, values of the tokens etc. have technical solutions that have been implemented as commercial blockchain protocols such as Ocean Protocol (data quality), Filecoin (storage incentive) etc. They are not explained further in this White Paper.
 
 # 3	Machu Picchu Implementation 
-##3.1	Machu Picchu Structure 
+## 3.1	Machu Picchu Structure 
 Machu Picchu has a B2B2C business model. It offers services to all organizations that are in direct contact with the Persons-in-Need ("**PnD**") world-wide. By adhering to the Machu Picchu community, these organizations have access to quality data to accomplish their missions.
 
 We can compare Machu Picchu with the USA highway Route 66. It is a public service. It has given birth around it to a successful economy composed of hotels, restaurants, garages, industries, doctors, etc. in all cities along this Route 66. Nobody owns Route 66; nobody owns Machu Picchu either. With Machu Picchu, “*data is a public service*”.
