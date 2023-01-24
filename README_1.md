@@ -12,7 +12,7 @@ Watch the 1-minute video here: https://youtu.be/joPwVTsLojU
 This white paper can also be read in a reverse way, as a tutorial to learn coding blockchain, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions.
 - After reading the white paper, if you —as a humanitarian executive— are convinced that this approach may help ease existing pains, you can follow the tutorial part, learning how to implement it for real. No prerequisite in programming.
 
-- To read the blockchain programming Tutorial, go here: 
+- To read the blockchain programming Tutorial, go here: [*Tutorial Link*](./README_2.md)
   
 Finally, this document can serve as input for hackathon teams, as a guide and some prototype components, for them to use the purpose, hack advanced tools to a purposeful result and win.
 
