@@ -7,7 +7,7 @@ Are you interested in blockchain programming, but hesitate to start, not being a
 
 ##	Reading guide
 This tutorial can also be read in a reverse way, as a white paper of a humanitarian assistance project, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions.
-- After reading the white paper, if you —as a humanitarian executive— are convinced that this approach may help ease existing pains, you can follow the tutorial part, learning how to implement it for real. No prerequisite in programming.
+- *After reading the white paper, if you —as a humanitarian executive— are convinced that this approach may help ease existing pains, you can follow the tutorial part, learning how to implement it for real. No prerequisite in programming.*
 
 ![reading guide](./images/00-Reading%20guide.png)
 
