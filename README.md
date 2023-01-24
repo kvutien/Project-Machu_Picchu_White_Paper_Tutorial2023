@@ -15,4 +15,4 @@ Finally, this document can serve as input for hackathon teams, as a guide and so
 
 ## Contents
 - To read the Machu Picchu White Paper, go here: [*White Paper Link*](./README_1.md)
-- To read the blockchain programming Tutorial, go here: 
+- To read the blockchain programming Tutorial, go here: [*Tutorial Link*](./README_2.md)
