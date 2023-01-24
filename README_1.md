@@ -216,7 +216,7 @@ The progression is:
 Each stakeholder has a specific concern to satisfy:
 -	The Person-in-Need main concern is "*how can I feed my kids and myself today?*"
 -	The local Helper Association main concern is "*how can I anticipate on the survival of the communities of Person-in-Need I'm sponsoring?*"
-	The international Helper Institution main concern is "*how can I convince donors to fund my activities?*"
+-	The international Helper Institution main concern is "*how can I convince donors to fund my activities?*"
 
 To be successful, Machu Picchu addresses these concerns at every step.
 -	For the **PnD** and in routine mode, Machu Picchu brings a simple way to receive financial aid from international Helper Institutions by the quality of personal data on the **PnD** and the easy way to distribute digital cash. However, at the beginning, there is no significant funding for this purpose. Machu Picchu could instore a simple decentralized lottery where can participate only the PnD who keep regular update of their data in Machu Picchu.
