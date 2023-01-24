@@ -221,6 +221,7 @@ Each stakeholder has a specific concern to satisfy:
 To be successful, Machu Picchu addresses these concerns at every step.
 -	For the **PnD** and in routine mode, Machu Picchu brings a simple way to receive financial aid from international Helper Institutions by the quality of personal data on the **PnD** and the easy way to distribute digital cash. However, at the beginning, there is no significant funding for this purpose. Machu Picchu could instore a simple decentralized lottery where can participate only the PnD who keep regular update of their data in Machu Picchu.
 -	For the local Helper Association, Machu Picchu brings a mobile app to allow the field staff to keep contact with the sponsored persons, and a low cost, no fuss and resilient server based on Single Board Computer (SBC) like a Raspberry Pi that uses less than 10 UAD per year of electricity and stores data for thousands of PnD as NTFS and blockchain records. 
+-	For the international Helper Institution, Machu Picchu is a source of reliable data, a channel to distribute aids, a transparent way to justify the use of donations 
 
 To start immediately, Machu Picchu includes a free satellite Earth Observation tool to monitor the crops of these persons, anticipate the evolutions and actions required. An example prototype exists, "Steve Observer": https://youtu.be/joPwVTsLojU.
 
