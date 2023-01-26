@@ -23,7 +23,29 @@ The major obstacle I met when I started programming blockchain in 2016 was the q
 
 ![Blockchain Learning](./images/06-Blockchain%20Learning.png)
 
-## 1.2	Introduction to remix.ethereum.org 
+## 1.2	Back to basics: What is a transaction? a smart contract? 
+Before we jump into the coding tutorial, we can ask ourselves why we are interested to code in the blockchain, and why this tutorial exists. Five years ago, a high-level executive in humanitarian insurance asked me what makes the blockchain better than a distributed database.
+
+Back to basics, at the beginning there is a transaction.
+- Illustration: Your mother gives 100 USD to the Helper Institution Caritas. She tells her bank. The bank transfers 100 USD from her account to the bank account of Caritas, with a short explanation message. This is a transaction.
+
+Now a more elaborate transaction, with a smart contract (some verification logic).
+- Caritas contacts a local Helper Association in Tamil Nadu, India, named DHAN. Caritas asks DHAN to give 50 USD to Mr Prahan Murugan, if this person has 5 kids and lives indeed in the village Pattasamil, Melur District, because this area recently suffered a severe drought and Caritas knows that this person lost his crops and is among the families most at risk. If the information is wrong, then DHAN is required to cancel the request.
+
+This story is of course imaginary, because a local Helper Association is not staffed to do this kind of work and an international Helper Institution has no way (today) to know a Person-in-Need (PnD) in such details. We see how the use of a blockchain and a smart contract to perform the transaction helps reducing overhead costs. If DHAN can convince people like Mr Prahan Murugan and support them using blockchain transactions, future assistance actions can be automated and DHAN can spend time do more useful things, like education for women, for water usage, for low carbon practices etc.
+
+![Back to Basics](./images/06a-Back%20to%20Basics.png)
+
+We see that despite their somewhat misleading name, smart contracts are small computer programs that have been deployed to blockchains like Ethereum. Smart contracts are composed of code and data. The code — basically a set of functions — can manipulate the data that is stored with the contract. Each smart contract has an address that is defined at deployment.
+- The address for an Ethereum contract is computed ("hash") from the address of its creator, the deployment program, and how many transactions the said program has already sent.
+
+Together, smart contracts form a giant network of computer programs that can interact with each other by their address and their descriptor (ABI), they speak the same language and access the same data.
+
+Deploying a smart contract, executing functions of a smart contract and transacting with a smart contract means that we require ALL blockchain nodes to do the same operation. This has a cost. This cost is expressed as "gas" which translate in "ether" the crypto currency of Ethereum. We'll see this in detail later.
+
+Let's examine the code of a simple smart contract.
+
+## 1.3	Introduction to remix.ethereum.org 
 To get our feet wet in blockchain programming we can take advantage of Remix. Remix is a web application. It can be configured to share files and executables outside the local computer. But its default configuration makes it ideal for this tutorial that focuses on learning, no waste of time setting up a development environment and a blockchain to interact with. 
 -	By default, all files are stored in the browser's local database in memory
 -	By default, all versions of the Solidity compiler and Ethereum Virtual Engine (EVM) can be used
@@ -43,7 +65,7 @@ Click the icon "File Explorer" (top left) to come back to the starting point.
 
 ![Remix light mode](./images/12-Remix%20light%20mode.png)
 
-## 1.3	How Remix window is organized
+## 1.4	How Remix window is organized
 The most popular IDE are based on the same frontend engine named Electron. As a result, your developer experience will be very similar whether you use either Remix, VisualStudio Code, XCode or Android Studio. The screen of these IDE is organized in 4 panes
 1.	The Menu Bar, also called the Icon Panel
 2.	The File Explorer, also called the Side Panel
@@ -70,7 +92,7 @@ The fourth pane is a **Console Panel**.
 
 For the moment, let's review the typical set of tools in a developer workflow. They are shown in the drawing below. 
 
-# 1.4	Developer workflow with Remix 
+# 1.5	Developer workflow with Remix 
 
 ![Dev workflow & tools](./images/14-Dev%20workflow%20&%20tools.png)
 
@@ -94,7 +116,7 @@ In the next step of this tutorial, we'll compile, deploy and test execution of o
 
 ![Remix extensions](./images/14a-Remix%20extensions.png)
 
-# 1.5	Deploy first smart contract using Remix 
+# 1.6	Deploy first smart contract using Remix 
 To start, reload the page https://remix.ethereum.org/. Every time you reload this page, you obtain a fresh environment. Now in the Menu Bar click on the icon "File explorer". 
 
 If you don't see the screen below, click again on the same icon: it's because the Side Panel toggles in and out whenever you click on its icons.
@@ -202,14 +224,14 @@ Congratulations. You have **compiled** your first smart contract and **deployed*
 
 The address of this contract on this internal blockchain is `0xd9145CCE52D386f254917e481eB44e9943F39138`. As promised, nothing to install, nothing to configure, nothing to subscribe, nothing to pay, nothing to manage locally.
 
-# 1.6	What have we learned?
+# 1.7	What have we learned?
 -	We made our first contact with an IDE, Integrated Development Environment. 
 You will meet similar IDE's (with the same organization in panels) when developing blockchain smart contracts with other tools like Truffle, Hardhat or Foundry, when coding in JavaScript a frontend like React or Angular, when coding an iPhone app with XCode, when coding an Android mobile app with Android Studio, and even when doing statistics with R, or doing Earth Observation with Google Earth Engine.
 -	We have seen that Remix includes by default everything to start learning developing in Solidity, the language for blockchain smart contracts. We will see later that it has also the required means to interface more elaborate programming tools.
 -	We have compiled, deployed and executed the simplest possible smart contract on a local blockchain. 
 -	We observed that Remix has right from the box more elaborate smart contracts including the required scaffolding to manage tokens and muti-signature wallets. We'll use them in Machu Picchu.
 
-# 1.7	Where do we go from here?
+# 1.8	Where do we go from here?
 In the next parts 
 	we'll understand the Solidity code of this simple smart contract code and the JavaScript code of its test script.
 Consider that automated testing is as important as the smart contract itself. Trusting the code is fundamental to using blockchains, so automated testing allows anybody to make sure that the code does what it is intended to do.
