@@ -226,6 +226,8 @@ Congratulations. You have **compiled** your first smart contract and **deployed*
 
 The address of this contract on this internal blockchain is `0xd9145CCE52D386f254917e481eB44e9943F39138`. As promised, nothing to install, nothing to configure, nothing to subscribe, nothing to pay, nothing to manage locally.
 
+You haven't executed the deployed contract yet. We'll do this later, in the section about automated tests.
+
 # 1.7	What have we learned?
 -	We made our first contact with an IDE, Integrated Development Environment. 
 You will meet similar IDE's (with the same organization in panels) when developing blockchain smart contracts with other tools like Truffle, Hardhat or Foundry, when coding in JavaScript a frontend like React or Angular, when coding an iPhone app with XCode, when coding an Android mobile app with Android Studio, and even when doing statistics with R, or doing Earth Observation with Google Earth Engine.
