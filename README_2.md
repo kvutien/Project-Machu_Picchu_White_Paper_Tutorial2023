@@ -222,7 +222,7 @@ import { deploy } from './ethers-lib'
     }
   })()
 ```
-Congratulations. You have **compiled** your first smart contract and **deployed** it in a local node of a sandbox blockchain running in the data space of your web browser. 
+**Congratulations**. You have **compiled** your first smart contract and **deployed** it in a local node of a sandbox blockchain running in the data space of your web browser. 
 
 The address of this contract on this internal blockchain is `0xd9145CCE52D386f254917e481eB44e9943F39138`. As promised, nothing to install, nothing to configure, nothing to subscribe, nothing to pay, nothing to manage locally.
 
