@@ -50,7 +50,7 @@ To get our feet wet in blockchain programming we can take advantage of Remix. Re
 -	By default, all files are stored in the browser's local database in memory
 -	By default, all versions of the Solidity compiler and Ethereum Virtual Engine (EVM) can be used
 -	By default, a local sandbox blockchain is generated ready for use in deployment and local tests
--	By default, there are already 10 Ethereum accounts available, populated with 100 ETH each
+-	By default, there are already 15 Ethereum accounts available, populated with 100 ETH each
 -	By default, there are already many sample codes ready to be compiled, deployed and tested.
 
 **Open https://remix.ethereum.org/ and do the exercises in parallel to the tutorial text.**
