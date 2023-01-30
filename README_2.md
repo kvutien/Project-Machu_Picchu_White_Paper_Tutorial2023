@@ -4,17 +4,17 @@
 Are you interested in blockchain programming, but hesitate to start, not being a programmer? or maybe you are IT project manager or higher IT executive? I was like you in 2016 and this post is what I wished have existed. You are reading a Full-Stack tutorial, showing how to code a smart contract in Solidity, deploy it on a testnet, code a JavaScript frontend with React, deploy it for a public access.
 
 - *What makes this tutorial different from the others is that it implements a real-life application, a humanitarian assistance project Machu Picchu. As such, this humanitarian initiative is described in depth here:*
-[Machu Picchu White Paper](README_1.md)
+[**Machu Picchu White Paper**](README_1.md)
 
 ##	Reading guide
-This tutorial can also be read in a reverse way, as a white paper of a humanitarian assistance project, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions.
+This tutorial can also be read in a reverse way, as a white paper of a humanitarian assistance project, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions. 
   
 Finally, this document can serve as input for hackathon teams, as a guide and some prototype components, for them to use the purpose, hack advanced tools to a purposeful result and win.
 
 ![reading guide](./images/00-Reading%20guide.png)
 
 #	1. Our learning curriculum
-This part if for you if you have only slots of 10 to 20 minutes to spare (not even every day), and you still want to get your feet wet in blockchain programming. Very quickly after the first steps, you can already learn a lot without installing anything on your laptop. You only need a web browser and an active Internet connection.
+This part is for you if you have only slots of 10 to 20 minutes to spare (not even every day), and you still want to get your feet wet in blockchain programming. Very quickly after the first steps, you can already learn a lot without installing anything on your laptop. You only need a web browser and an active Internet connection.
 
 The major obstacle I met when I started programming blockchain in 2016 was the quantity of information to digest and of tools to install. Fortunately, since then the development landscape has improved enormously. 
 1.	In the following tutorial, we can start learning to code using only our browser, without installing anything on our local computer. Nothing to install, nothing to configure, nothing to pay, nothing to subscribe.
@@ -246,6 +246,5 @@ Consider that automated testing is as important as the smart contract itself. Tr
 -	finally, we'll go out of Remix, in the usual complex environment of a developer when Remix did not exist. We'll learn also how to connect these tools to Remix.
 -	At the end of this step this tutorial will end. You are well armed to progress further by yourself.
 
-Now let's understand the Solidity code of this simple smart contract.
-
-*--> more to come*
+Now let's understand the Solidity code of this simple smart contract "`1_Storage`":
+[**Understand the code of 1_Storage**](./README_3.md)
