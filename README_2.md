@@ -135,7 +135,7 @@ Explanations:
 -	the folder "scripts" also contains the code to run tests. Automated testing is indispensable when coding smart contracts, to make sure that security best practices are respected. The default workspace contains a testing script in Solidity and another testing script in JavaScript. Both methods of testing are useful.
 -	the folder "**.deps**" contains the pre-loaded Solidity libraries that are "imported" in this workspace from a contract code located somewhere else.
 
-Our learning progression starts with the first contract, the simplest. We'll analyze the code later. Let's compile and deploy it. For this, in the pane "File Explorer", click on the folder "contracts" to expand it, and click on the file named "`1_Storage.sol`". In the Main Panel we see that the Text Editor displays a new tab with the Solidity code of this contract.
+Our learning progression starts with the first contract, the simplest. We'll analyze the code later. Let's compile and deploy it on the blockchain. For this, in the pane "File Explorer", click on the folder "contracts" to expand it, and click on the file named "`1_Storage.sol`". In the Main Panel we see that the Text Editor displays a new tab with the Solidity code of this contract.
 
 ![contract Storage](./images/17-contract%20Storage.png)
 
