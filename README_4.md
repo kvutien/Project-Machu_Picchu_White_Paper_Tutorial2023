@@ -73,7 +73,7 @@ In Solidity, events can be logged with an "`emit`" instruction, like in line 43.
 Good programming practices recommend to emit an event each time a state variable changes value.
 
 ## 1.5	Solidity `modifier` code block
-A `modifier` is a special type of Solidity function that is used to modify the behavior of other functions. For example, developers can use a modifier to check that a certain condition is met before allowing the function to execute.
+A `modifier` is a special type of Solidity function that is used to modify the behavior of other functions. For example, developers can use a modifier to check that a certain condition is met before allowing a function to execute.
 
 This code defines a "modifier" in our smart contract:
 ``` js
@@ -105,7 +105,7 @@ This code defines a "constructor":
 36     }
 ```
 -	Line 33 prints out via Hardhat a message with the address of the account that paid the gas fees to deploy the smart contract on the blockchain.
--	Line 34 set the variable `owner` to the address of the account that paid the gas fees to deploy the smart contract on the blockchain.
+-	Line 34 sets the variable `owner` to the address of the account that paid the gas fees to deploy the smart contract on the blockchain.
 -	Line 35 emits an event. This practice is recommended whenever the state of the contract is changed. The log can be viewed in the Remix console when you expand "Debug".
 
 ## 1.7	Function `changeOwner`
@@ -120,7 +120,7 @@ The code says
 -	Line 43 emits the event `OwnerSet`. It will log the current owner address and the new owner address. Note that the event name starts with an upper case letter.
 -	Line 44 changes the state variable `owner`. The next time we call this function from the new account, the modifier will accept it. We'll exercise this function later here.
 
-## 1.8	Function getOwner
+## 1.8	Function `getOwner`
 This function introduces the notion of a "getter" function. Such function is attached to a state variable and does only one thing: return the value of the state variable. The Solidity compiler generates automatically a getter function for each state variable declared as `public`. If the variable is declared `private`, as is the case here for `owner` in line 13, you need to write your own getter function.
 
 The advantage of a private getter function is that you can convert and return the variable into another unit or another type, restrict the call to the getter function with a modifier etc.
@@ -139,8 +139,8 @@ In the next step, we compile and deploy the smart contract. When running it, we'
 We repeat the previous exercise in `1_Storage.sol` to compile and deploy a smart contract in Remix. This time, we'll deploy manually instead of using the deploying script, this gives us more flexibility by decoupling compilation from deployment (and from running).
 ## 2.1	How to compile and deploy
 To compile: 
--	Check that the file 2_Owner.sol is displayed in the Main panel. If not, in the Menu bar select the icon "File explorer" and in the Side panel select the file. 
--	If the auto-compile is on, the icon "Solidity compiler" in the Menu Bar should have a green tag. If not, something is wrong with the Solidity code, create a new default workspace and start from it.
+-	Check that the file `2_Owner.sol` is displayed in the Main panel. If not, in the Menu bar select the icon "File explorer" and in the Side panel select the file. 
+-	If the auto-compile is on, the icon "Solidity compiler" in the Menu Bar should have a green tag. If not, something is wrong with the Solidity code, create a new default workspace and restart from it.
 
 To deploy: 
 -	In the Menu bar select the icon "Deploy & run transactions". 
@@ -163,7 +163,7 @@ Note the last 2 lines were printed out by the instruction line 33.
 ```
 We see that it is useful to print out values on the console during development, to verify execution.
 
-Observe that deploying a smart contract is nothing else than making a transaction with the blockchain. Referring to the section "Back to basics" we see that when we deploy, we made a transaction with the community of blockchain nodes, telling them "*I pay x gas fees and in exchange please you record in the blockchain that this contract is now available for execution at address xxx*". We'll see the contract address value below. 
+Observe that deploying a smart contract is nothing else than making a transaction with the blockchain. Referring to the section "Back to basics" we see that when we deploy, we made a transaction with the community of blockchain nodes, telling them "*I pay x gas fees and in exchange please you all record in the blockchain that this contract is now available for execution at address xxx*". We'll see the contract address value below. 
 -	**Hint**: click on the caret "V" at the right of the button "Debug". The Console expands to display lengthy details of the deployment. We are not explaining them in detail yet today.
 ![Deploy](./images/26b-Deploy.png)
 
@@ -210,7 +210,7 @@ Scroll down and click on the orange button "changeOwner". Observe the message fr
 transact to Owner.changeOwner pending ... 
 [vm]from: 0x5B3...eddC4to: Owner.changeOwner(address) 0xd91...39138value: 0 weidata: 0xa6f...35cb2logs: 1hash: 0xd1b...49448
 ```
-Notice the difference between the previous message from the blue button "getOwner" and this message from the orange button "changeOwner". It was a "`call`" and now it is a "`transact`".
+Notice the difference between the previous message from the blue button "getOwner" and this message from the orange button "changeOwner". It was previously a "`call`" and now it is a "`transact`".
 
 To verify the new owner, click on the blue button "getOwner". Observe the message from the console.
 ``` console
@@ -221,7 +221,7 @@ CALL
 Check that the value has changed to `0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2`. It is the address of the 2nd account.
 ![changeOwner](./images/28e-changeOwner.png)
 
-Observe that the 1st account has spent some additional ETH to execute the transaction changeOwner.
+Observe that the 1st account has spent some additional ETH to execute the transaction `changeOwner`.
 ![changeOwner](./images/28e1-changeOwner.png)
 
 ## 2.6	What if we call "changeOwner" from the 2nd account?
@@ -240,7 +240,7 @@ The function `changeOwner` will be called from the 2nd account, which is not yet
 
 After a very elementary smart contract (the contract `1_Storage.sol`) that simply changes internal state, we have met a function that includes a `modifier` and a `constructor` (the contract `2_Owner.sol`).
 
-In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, the voting contract `3_Ballot.sol`. After that we are ready to change gears and build token-handling contracts, with the help of public libraries. After learning this, we can end the Solidity part of this tutorial by building Machu Picchu core. Remains to build the React frontend to finish this full-stack tutorial.
+In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, the voting contract `3_Ballot.sol`. After that we are ready to change gears and build token-handling contracts, with the help of public libraries. After learning this, we can conclude the Solidity part of this tutorial by building Machu Picchu core. Remains to build the React frontend to finish this full-stack tutorial.
 
 
 *--> more to come*
