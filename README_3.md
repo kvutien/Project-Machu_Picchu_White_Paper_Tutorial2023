@@ -344,11 +344,11 @@ The `async` qualifier of the function instructs JavaScript to prepare to handle 
  9    await storage.deployed();
 10    console.log('storage deployed at:'+ storage.address)
 ```
--	line 6 says: "hey, watch out, there will be some asynchronous function call(s) coming."
--	line 7 says "call the function getContractFactory of the package ethers and await, don't execute the next instruction until you receive the result from getContractFactory".
--	line 8 says "call the function deploy of the object named Storage (which happens to be the result of the previous line) and await, don't execute the next instruction until you receive the result from deploy".
--	line 9 says "call the function deployed() of the object storage and await for the blockchain function to answer".
--	line 10 says "print out the address of the object storage".
+-	line 6 says: "*hey, watch out, there will be some asynchronous function call(s) coming.*"
+-	line 7 says "*call the function `getContractFactory` of the package `ethers` and `await`, don't execute the next instruction until you receive the result back from `getContractFactory`*".
+-	line 8 says "*call the function `deploy` of the object named `Storage` (which happens to be the result of the previous line) and `await`, don't execute the next instruction until you receive the result back from `deploy`*".
+-	line 9 says "*call the function deployed() of the object storage and await for the blockchain function to answer back*".
+-	line 10 says "*print out the `address` of the object `storage`*".
 
 What happens if you forgot the keyword `await`?
 
@@ -413,9 +413,9 @@ The code is
 20    expect((await storage2.retrieve()).toNumber()).to.equal(56);
 21  });
 ```
--	line 17 says "get the contract named "`Storage`" (note the upper-case) from the address that is kept in the descriptor object named `storage`, wait for the returned contract interface and keep in `storage2`".
--	line 18 says "call the function `store` of the contract that is kept in `storage2` with the argument 56, wait for the resulting transaction details and keep it in `setValue`".
--	line 19 says "wait until the mining of the transaction in `setValue` is successful" (remember that a blockchain transaction needs a few minutes to be "mined", i.e. to be inserted in a block).
+-	line 17 says "*get the contract named "`Storage`" (note the upper-case) from the address that is kept in the descriptor object named `storage`, wait for the returned contract interface and keep in `storage2`*".
+-	line 18 says "*call the function `store` of the contract that is kept in `storage2` with the argument 56, wait for the resulting transaction details and keep it in `setValue`*".
+-	line 19 says "*wait until the mining of the transaction in `setValue` is successful*" (remember that a blockchain transaction needs a few minutes to be "mined", i.e. to be inserted in a block).
 - Line 20 is the interesting part: it executes the test expect of the Chai library. Same explanation as above.
 ``` javascript
     expect((await storage2.retrieve()).toNumber()).to.equal(56);
