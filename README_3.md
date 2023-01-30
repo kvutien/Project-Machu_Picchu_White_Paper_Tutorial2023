@@ -179,6 +179,7 @@ In Solidity, names of functions are lower-case. This function "`store`" accepts 
 Try using other types of variables (`int256`, `bool`, `address`, `bytes32` etc.) and check the error message. Try deleting the line and check the error message. Retype the original instruction.
 
 This function statement has the visibility qualifier "`public`". A "public" function can be called from other functions outside the contract or inside the same contract. We'll see later the other qualifiers.
+
 The line 19 says
 ```
         number = num;
