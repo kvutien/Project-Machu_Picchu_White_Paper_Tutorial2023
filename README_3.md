@@ -312,7 +312,7 @@ Passed: 2
 Failed: 0
 Time Taken: 134 ms
 ```
-**Congratulations**. You have deployed for the second time your smart contract and executed successfully your first automated test suite with 2 successful test cases (0 failed). Observe that the text you changed in "`describe`" code block is printed here.
+**Congratulations**. You have deployed for the second time your smart contract and executed successfully without leaving Remix your first automated test suite with 2 successful test cases (0 failed). Observe that the text you changed in "`describe`" code block is printed here.
 
 You achieved in a few steps the tasks that in 2016 took me 9 months to accomplish.
 
