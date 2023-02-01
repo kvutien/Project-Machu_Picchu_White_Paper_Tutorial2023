@@ -230,7 +230,61 @@ What happens if we change to the 2nd account, copy-paste its address to the para
 The function `changeOwner` will be called from the 2nd account, which is not yet the Owner. The modifier will detect it and revert the transaction. We can check in the console, and also by clicking on "getOwner": the owner hasn't changed.
 ![changeOwner](./images/28f-changeOwner.png)
 
-## 2.7	What have we learned?
+## 2.7	Exercise: create and run a JavaScript test
+Duplicate the file "`test/storage.test.js`". Change the test cases to test that the address of the `owner` has changed after calling the function `changeOwner()`.
+
+**Hint**: the solution is
+```js
+ 1  // Automated test of contract 2_Owner.sol
+ 2  // Right click on the script name and hit "Run" to execute
+ 3  const { expect } = require("chai");
+ 4  const { ethers } = require("hardhat");
+ 5  
+ 6  describe("Automated testing 2_Owner.sol smart contract", function () {
+ 7    it("test changing and retrieving new owner", async function () {
+ 8      [deployer, signer2] = await ethers.getSigners();
+ 9      const owner2 = await signer2.getAddress();
+10      const Owner = await ethers.getContractFactory("Owner");
+11      const owner = await Owner.deploy();
+12      await owner.deployed();
+13      // change owner to 2nd built-in Remix account;
+14      await owner.changeOwner(owner2);
+15      // check change in owner address
+16      expect((await owner.getOwner())).to.equal(owner2);
+17    });
+18    it("test changing back to previous owner", async function () {
+19      [deployer, signer2] = await ethers.getSigners();
+20      const owner1 = await deployer.getAddress();
+21      const owner2 = await signer2.getAddress();
+22      const Owner = await ethers.getContractFactory("Owner");
+23      const owner = await Owner.deploy();
+24      await owner.deployed();
+25      // change owner to 2nd built-in Remix account;
+26      await owner.changeOwner(owner2);
+27      // change owner back to 1st built-in Remix account;
+28      await owner.connect(signer2).changeOwner(owner1);
+29      // check change in owner address
+30      expect((await owner.connect(signer2).getOwner())).to.equal(owner1);
+31    });
+32  });
+```
+**Proof**: the Console Panel displays the following message
+``` console
+RUNS tests/owner.test.js....
+ Automated testing 2_Owner.sol smart contract
+   ✓ test changing and retrieving new owner (285 ms)
+   ✓ test changing back to previous owner (142 ms)
+Passed: 2
+Failed: 0
+Time Taken: 429 ms
+```
+**Explanation**: We meet here some new ethers functions:
+-	Line 8. The function `getSigners()` of the package `ethers` returns the array of all signers known, of which we keep the first 2.
+-	Line 9. `signer2` is an object, of which we call the getter function `getAddress()` to retrieve its 32-bytes address
+-	Line 20. We do the same to get the contract deployer's address.
+-	Line 28 and 30. We have to use the function `connect()` to change the signer of the transaction (`msg.sender`) else by default the signer is the contract's deployer, which doesn't match anymore the current `owner`, in the modifier `isOwner`.
+
+## 2.8	What have we learned?
 -	We know how to manually deploy a smart contract and exercise the functions of this contract.
 -	We know that Remix includes a welcome feature of Hardhat to print out contents of Solidity variables from smart contracts, `console.sol`.
 -	We know that to exercise contracts Remix has 15 accounts pre-filled with 100 ETH each. Each time we do a transaction we spend some, except when calling `view` or `pure` functions.
