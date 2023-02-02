@@ -191,7 +191,7 @@ Training is focused on field sponsors' staff to use simple software tools.
 ### 3.4.1	The progression
 The doctrine of Machu Picchu is to proceed bottom-up. This means that focus is made first on the end-users, who unfortunately can't afford paying development nor services nor learning blockchain. For this reason and without funding, Machu Picchu has to first acquire leveraging sources. The resources that Machu Picchu can leverage are the community of Developers-for-Good and one or several Field Local Helper Associations.
 
-![Machu Picchu Acquisition Strategy](./images/05-Machu%20Picchu%20Acquisition%20Strategy.png)
+![Machu Picchu Acquisition Strategy](./images/05-%20Machu%20Picchu%20Acquisition%20Strategy.png)
 
 The progression is:
 -	In the initial phase, Machu Picchu implementation is ad-hoc and based on available funding and needs. With developers-for-Good, Machu Picchu participates to hackathons and makes prototypes of interesting technologies (see chapter "Machu Picchu Implementation" above).
