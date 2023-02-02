@@ -29,7 +29,7 @@ such a policy is composed of:
 - Machu Picchu is a collaborative open-source project. It aims at producing and maintaining accurate data about the persons-in-need ("**PnD**").
 - For this purpose, Machu Picchu lets each **PnD** publish on the Internet their profile and their needs (a kind of LinkedIn profile). These people keep ownership of their data and can selectively allow humanitarians, governmental agencies and any service provider to access these data against micro-payments, to best program their aids and services. 
 - To achieve this purpose, Machu Picchu provides ready-made tools for each type of stakeholder: the **PnD**, the field sponsor, the humanitarian organization. Peripheral stakeholders like service providers (banks, insurers, input suppliers, food companies…) will develop their own tools.
-- The final purpose is to use the stat-of-the-art technologies to enhance financial inclusion and reduce the costs and administrative burdens on humanitarian aids.
+- The final purpose is to use the state-of-the-art technologies to enhance financial inclusion and reduce the costs and administrative burdens on humanitarian aids.
 ### 1.2.2.	**Implementation strategy**, to identify the skills and industry to be acquired and supported
 Machu Picchu is open source. It uses the following technologies:
 -	The Internet and the mobile network to distribute and collect data (SMS or UDDS),
