@@ -19,57 +19,41 @@ Finally, this document can serve as input for hackathon teams, as a guide and so
 ![reading guide](./images/00-Reading%20guide.png)
 
 # 1.Machu Picchu Big Picture
-##	1.1 Introduction to the concept of a *Strategy-Driving Policy*
-A Policy is in general composed of many steps, among them writing a White Paper. To better understand the process, let's see the example of a nation's military policy. Then we will transpose this example to Machu Picchu. 
+
+
+## 1.2 *Strategy-Driving Policy* of Machu Picchu
+A Policy is in general composed of many steps, among them writing a White Paper. In case of Machu Picchu. 
 Such a policy is composed of:
-1.	**A White Paper**, to set out the final purpose of the action and the means to accomplish it. 
 
-- For example, would an army's mission be only for territorial defense and deterrence, or rather for proactive attack, and can it include civil emergency rescue tasks? would eventual attacks be carried out as a flash operation or be capable of a sustained duration war? is there any large maritime area or any oceanic island involved? are there remote projections to support an alliance? are there any new threats (cyberwar, space war)? what are the limiting means (budget, personnel, technology) to carry out this mission? what are the weaknesses and the strengths?
-
-Sample: https://english.defensie.nl/downloads/publications/2022/07/19/defence-white-paper-2022
-
-The below White Paper describes what is the mission of Machu Picchu.
-
-2.	**An implementation strategy**, to identify the skills and industry to be acquired and supported.
--	Budget: what budget is available and how would tradeoffs be made?
--	Base weapons: what vectors are needed for ground, for naval, for air? respectively for attack and for defense?
--	Support technology: what support technologies are required? For example turbo-engines, micro-electronics, cryptography, communication and transport network?
-
-This White Paper lists the technologies that Machu Picchu needs (blockchain, decentralized storage, market making protocols, Earth Observation, mobile applications etc.).
-
-3.	**An acquisition & maintenance strategy**, to guide the logistics
--	Acquisition:  can the arms and munitions be externally procured, or a national know-how needs be developed? what skills exist? which ones must still be acquired? for which arms (ground-sea-air)? on which time scale? For example, despite its huge investment since a long time, China is still much dependent on Russia for its air force because lack of the engine technology.
--	Maintenance: what levels of expertise are needed for base maintenance, field maintenance? what level of spare supplies? how are they distributed?
-
-4.	**A doctrine and a training strategy**, to bring coherency in operations and guide technological developments.
--	Doctrine: national defense or attack? flash operations or long duration war? conscripts or professionals? hierarchical command flow or autonomous initiative? multi-vector coordinated operations vs. isolated and specialized operations?
--	Training (depends on doctrine): what minimum proficiency? how much and how often run exercises? which depth of realism?
-
-5.	**A lobbying and funding strategy**: what talk lines to use to obtain public support and funding? what technology development and use cases to put forward?
-
-## 1.2 Application to Machu Picchu
-1.	**White Paper**, to set out the final purpose of the action. 
+### 1.2.1	**White Paper**, to set out the final purpose of the action. 
 - Machu Picchu is a collaborative open-source project. It aims at producing and maintaining accurate data about the persons-in-need ("**PnD**").
 - For this purpose, Machu Picchu lets each **PnD** publish on the Internet their profile and their needs (a kind of LinkedIn profile). These people keep ownership of their data and can selectively allow humanitarians, governmental agencies and any service provider to access these data against micro-payments, to best program their aids and services. 
 - To achieve this purpose, Machu Picchu provides ready-made tools for each type of stakeholder: the **PnD**, the field sponsor, the humanitarian organization. Peripheral stakeholders like service providers (banks, insurers, input suppliers, food companies…) will develop their own tools.
 - The final purpose is to use the stat-of-the-art technologies to enhance financial inclusion and reduce the costs and administrative burdens on humanitarian aids.
-2.	**Implementation strategy** 
-Machu Picchu is open source. It uses the following technologies:
--	the Internet and the mobile network to distribute and collect data (SMS or UDDS),
--	the mobile apps to implement the frontend (user interface) and avoid serving screens from centralized computers,
--	the blockchain and decentralized storage to achieve resilient data distribution and to implement the backend processes,
--	the low-cost Single Board Computers of type Raspberry Pi to run decentralized storage and to validate transactions,
--	the Earth Observation and open mapping data to monitor crop status,
--	blockchain security and cyber security.
+### 1.2.2.	**Implementation strategy**, to identify the skills and industry to be acquired and supported.
+- Machu Picchu is open source. It uses the following technologies:
+-	The Internet and the mobile network to distribute and collect data (SMS or UDDS),
+-	The mobile apps to implement the frontend (user interface) and avoid serving screens from centralized computers,
+-	The blockchain and decentralized storage to achieve resilient data distribution and to implement the backend processes,
+-	The low-cost Single Board Computers of type Raspberry Pi to run decentralized storage and to validate transactions,
+-	The Earth Observation and open mapping data to monitor crop status,
+-	Blockchain security and cyber security.
 
 At the initial phase, Machu Picchu implementation will be ad-hoc and based on available funding and needs. Prototyping will be done in hackathons, or with humanitarian partners if they can fund it.
 Priority is given to functions to facilitate adoption by the field sponsor, then to functions useful to the PnD, then to the needs of the international Helper Institutions.
 
-3.	**Acquisition & maintenance**
+### 1.2.3.	**Acquisition & maintenance**, to guide the logistics
 - Network skills
 - Blockchain and Decentralized Finance (DeFi) skills
 - Earth Observation 
 
+### 1.2.4.	**Doctrine and a training strategy**, to bring coherency in operations and guide technological developments.
+- This part is open.
+-	Doctrine: Focus to one layer of the humanitarian chain? How to address the needs of commercial service providers to **PnD**? When to use flash operations? how to handle volunteers vs. professionals? governance with which degree of centralization or only autonomous initiative? multi-vector coordinated operations vs. isolated and specialized operations?
+-	Training (depends on doctrine): which minimum proficiency of participants? how much and how often run pilots? which depth of realism?
+
+### 1.2.5.	**Lobbying and funding strategy**: 
+What talk lines to use to obtain public support and funding? what technology development and use cases to put forward?
 # 2. Machu Picchu White Paper
 This document is the 2nd draft of the Machu Picchu White Paper. The first one dates back in October 2021. The following White Paper describes:
 1.	The humanitarian context and the pains each community faces,
