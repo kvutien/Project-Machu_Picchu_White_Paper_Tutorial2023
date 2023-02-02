@@ -228,6 +228,7 @@ True Decentralized Finance and Decentralized Insurance are ancestral practices. 
 -	**Decentralized loans**: MakerDAO, 2017
 -	**Decentralized trading**: Uniswap, 2018
 -	**Decentralized risk-sharing**: Basle University, 2022
+
 Source code here:
 -	Uniswap: https://github.com/casweeney/Uniswap-ALL-IN-ONE
 -	Risk-Sharing: https://github.com/cifunibas/decentralized-insurance
