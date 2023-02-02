@@ -55,6 +55,7 @@ This part is open.
 ### 1.2.5.	**Lobbying and funding strategy**: 
 - What talk lines to use to obtain public support and funding?
 - What technology development and use cases to put forward?
+- What timeline can be committed in?
 # 2. Machu Picchu White Paper
 This document is the 2nd draft of the Machu Picchu White Paper. The first one dates back in October 2021. The following White Paper describes:
 1.	The humanitarian context and the pains each community faces,
