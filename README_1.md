@@ -22,8 +22,8 @@ Finally, this document can serve as input for hackathon teams, as a guide and so
 
 
 ## 1.2 *Strategy-Driving Policy* of Machu Picchu
-A Policy is in general composed of many steps, among them writing a White Paper. In case of Machu Picchu. 
-Such a policy is composed of:
+A Policy is in general composed of many steps, among them writing a White Paper. In case of Machu Picchu, 
+such a policy is composed of:
 
 ### 1.2.1	**White Paper**, to set out the final purpose of the action. 
 - Machu Picchu is a collaborative open-source project. It aims at producing and maintaining accurate data about the persons-in-need ("**PnD**").
