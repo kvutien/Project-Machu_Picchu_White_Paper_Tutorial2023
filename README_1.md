@@ -30,7 +30,7 @@ such a policy is composed of:
 - For this purpose, Machu Picchu lets each **PnD** publish on the Internet their profile and their needs (a kind of LinkedIn profile). These people keep ownership of their data and can selectively allow humanitarians, governmental agencies and any service provider to access these data against micro-payments, to best program their aids and services. 
 - To achieve this purpose, Machu Picchu provides ready-made tools for each type of stakeholder: the **PnD**, the field sponsor, the humanitarian organization. Peripheral stakeholders like service providers (banks, insurers, input suppliers, food companies…) will develop their own tools.
 - The final purpose is to use the stat-of-the-art technologies to enhance financial inclusion and reduce the costs and administrative burdens on humanitarian aids.
-### 1.2.2.	**Implementation strategy**, to identify the skills and industry to be acquired and supported.
+### 1.2.2.	**Implementation strategy**, to identify the skills and industry to be acquired and supported
 Machu Picchu is open source. It uses the following technologies:
 -	The Internet and the mobile network to distribute and collect data (SMS or UDDS),
 -	The mobile apps to implement the frontend (user interface) and avoid serving screens from centralized computers,
@@ -40,6 +40,7 @@ Machu Picchu is open source. It uses the following technologies:
 -	Blockchain security and cyber security.
 
 At the initial phase, Machu Picchu implementation will be ad-hoc and based on available funding and needs. Prototyping will be done in hackathons, or with humanitarian partners if they can fund it.
+
 Priority is given to functions to facilitate adoption by the field sponsor, then to functions useful to the PnD, then to the needs of the international Helper Institutions.
 
 ### 1.2.3.	**Acquisition & maintenance**, to guide the logistics
