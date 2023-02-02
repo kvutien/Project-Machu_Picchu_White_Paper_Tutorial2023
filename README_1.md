@@ -131,7 +131,7 @@ Let's illustrate with a story how it works:
 
 ![Machu Picchu solution](./images/03-Machu%20Picchu%20solution.png)
 
-In Web 2, the GAFA (Google, Apple Facebook, Amazon) built their fortune by making each user maintain personal data for the benefit of the central operator who monetize them. In the Web 3 world and in Machu Picchu, each user maintains personal data for their personal benefit. The privacy protection of GDPR is satisfied by design.
+In Web 2, the GAFA (Google, Apple, Facebook, Amazon) built their fortune by making each user maintain personal data for the benefit of the central operator who monetize them. In the Web 3 world and in Machu Picchu, each user maintains personal data for their personal benefit. The privacy protection of GDPR is satisfied by design.
 
 ## 2.5	Benefits of Machu Picchu solution
 The promises of payment are materialized as blockchain fungible tokens (crypto-currencies, stable coins or Central Bank Digital Currencies). Therefore, the reporting to donors of the use of the funds is immediate, using many existing “blockchain explorers”.
