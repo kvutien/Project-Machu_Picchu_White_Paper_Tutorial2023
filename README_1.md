@@ -179,6 +179,9 @@ The implementation of Machu Picchu is made by possible by all the decentralized 
 
 ![Machu Picchu components](./images/04-Machu%20Picchu%20components.png)
 
+The situation of Machu Picchu in February 2023 is as follows:
+![Machu Picchu components](./images/04a-Machu%20Picchu%20components.png)
+
 ## 3.3	Machu Picchu Doctrine
 
 Doctrine is a list of priorities, of target markets (where we stop), and how to make trade-offs when a choice must be done. It guides the decisions to develop, deploy, train, acquire users and customers.
