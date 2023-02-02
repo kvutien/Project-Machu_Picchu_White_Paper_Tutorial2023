@@ -174,7 +174,7 @@ The other differences are:
 
 The implementation of Machu Picchu is made by possible by all the decentralized infrastructure and tools that are available as Open-Source. Because Machu Picchu is bottom-up, final targets hardware must be of low acquisition cost, low power consumption and ease of replacement (and ease of use).
 -	frontend is composed of mobile equipment: feature phones, smartphones or tablets
--	backend is composed of Single Board Computers (Raspberry-style) and Solid-State Disks (SSD).
+-	backend is composed of low-cost, low-energy Single Board Computers (Raspberry-style) and Solid-State Disks (SSD).
 
 ![Machu Picchu components](./images/04-Machu%20Picchu%20components.png)
 
