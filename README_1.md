@@ -53,7 +53,8 @@ This part is open.
 -	Training (depends on doctrine): which minimum proficiency of participants? how much and how often run pilots? which depth of realism?
 
 ### 1.2.5.	**Lobbying and funding strategy**: 
-What talk lines to use to obtain public support and funding? what technology development and use cases to put forward?
+- What talk lines to use to obtain public support and funding?
+- What technology development and use cases to put forward?
 # 2. Machu Picchu White Paper
 This document is the 2nd draft of the Machu Picchu White Paper. The first one dates back in October 2021. The following White Paper describes:
 1.	The humanitarian context and the pains each community faces,
