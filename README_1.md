@@ -48,7 +48,7 @@ Priority is given to functions to facilitate adoption by the field sponsor, then
 - Earth Observation 
 
 ### 1.2.4.	**Doctrine and a training strategy**, to bring coherency in operations and guide technological developments.
-- This part is open.
+This part is open.
 -	Doctrine: Focus to one layer of the humanitarian chain? How to address the needs of commercial service providers to **PnD**? When to use flash operations? how to handle volunteers vs. professionals? governance with which degree of centralization or only autonomous initiative? multi-vector coordinated operations vs. isolated and specialized operations?
 -	Training (depends on doctrine): which minimum proficiency of participants? how much and how often run pilots? which depth of realism?
 
