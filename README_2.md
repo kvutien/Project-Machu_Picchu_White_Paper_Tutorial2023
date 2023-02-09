@@ -43,6 +43,13 @@ Together, smart contracts form a giant network of computer programs that can int
 
 Deploying a smart contract, executing functions of a smart contract and transacting with a smart contract means that we require ALL blockchain nodes to do the same operation. This has a cost. This cost is expressed as "gas" which translate in "ether" the crypto currency of Ethereum. We'll see this in detail later.
 
+**To summarize:** 
+-	a blockchain unit of activity is a **transaction**. 
+-	A transaction may call a **function** in a **smart contract**, which may call in cascade other functions that may lie in other smart contracts. 
+-	When the last function ends, the transaction is concluded, and the eventual state changes of the involved accounts are considered as closed.
+-	A transaction is always limited in time. It is either concluded or reverted.
+-	Unique to blockchains, a "flash loan" doesn't need any collateral to borrow hundreds of millions of dollars because by construction, its transaction always ends by reimbursing the loan.
+
 Let's examine the code of a simple smart contract.
 
 ## 1.3	Introduction to remix.ethereum.org 
