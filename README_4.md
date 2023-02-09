@@ -46,7 +46,11 @@ The code is longer, so we'll collapse the code blocks for an overview. We'll sti
 54 }
 ```
 ## 1.2	Import the Hardhat library in Solidity
-Because Hardhat is a blockchain development framework written in JavaScript it was natural that our previous JavaScript test script could import Hardhat. But here in line 5, we notice that Remix makes it also possible to import Hardhat in a Solidity code. Remix uses the smart contract `console.sol` to print out text debugging messages to the console.
+Line 5 says
+``` js
+import "hardhat/console.sol";
+```
+Line 5: it was natural that our previous JavaScript test script could import Hardhat using `const { ethers } = require("hardhat")` because Hardhat is written in JavaScript. But here in line 5, we notice that Remix also makes it possible to import Hardhat in Solidity code. Remix uses the Hardhat smart contract `console.sol` to print out text debugging messages right from inside the Remix Solidity run-time to the console.
 
 ## 1.3	Meet more variable types
 Line 13 says
@@ -54,8 +58,8 @@ Line 13 says
     address private owner;
 ```
 -	variable names start with a lower case, like `owner`.
--	a variable of type `address` is 256 bits long. We usually see an address as 64 hexadecimal characters, for example in MetaMask later in the tutorial.
--	 the qualifier `private` means that a state variable cannot be accessed programmatically by other smart contracts. Note that it can still be read as binary bits on the blockchain if one knows where the contract is deployed and how the contract data is organized.
+-	a variable of type `address` is 256 bits long, as most other Ethereum components. But an address is usually presented as 64 hexadecimal characters, for example in MetaMask later in the tutorial.
+-	the qualifier `private` means that this state variable will not be accessed programmatically by other smart contracts. Note that this variable can still be read as binary bits directly in the blockchain, knowing at which address the contract is deployed and how the contract data is organized.
 
 ## 1.4	Solidity Events and Logging
 Line 16 says
@@ -73,7 +77,7 @@ In Solidity, events can be logged with an "`emit`" instruction, like in line 43.
 Good programming practices recommend to emit an event each time a state variable changes value.
 
 ## 1.5	Solidity `modifier` code block
-A `modifier` is a special type of Solidity function that is used to modify the behavior of other functions. For example, developers can use a modifier to check that a certain condition is met before allowing a function to execute.
+A modifier is a special type of Solidity function that is used to condition (to modify) the behavior of other functions. For example, developers can use a modifier to check that a certain condition is met before allowing the function to execute (or after a function executed).
 
 This code defines a "modifier" in our smart contract:
 ``` js
@@ -87,14 +91,14 @@ This code defines a "modifier" in our smart contract:
 26        _;
 27    }
 ```
-In this example, the require function checks that the address of the account initiating the transaction (`msg.sender`) that launched the smart contract is equal to the value `owner`. If it is the case, the rest of the function calling this modifier can execute (as shows the underscore "`_`"), else the transaction is reverted and the state of the blockchain is restored as it was, before the transaction started.
+In this example, the `require` function checks that the address of the account used to sign the transaction (`msg.sender`) that called the function is equal to the value in `owner`. If it is the case, the rest of the function calling this modifier can execute (this is the meaning of the underscore "`_`"), else the transaction is reverted and the state of the blockchain is restored as it was, before the transaction started.
 
 The underscore can also be placed at the beginning of the modifier. When it is the case that modifier is placed at the end of a function and when this function is finished being executed, the modifier verifies that a certain condition is met.
 
 A smart contract can define several modifiers and a function can have several modifiers.
 
 ## 1.6	Solidity `constructor` code block
-A constructor in Solidity is a special function that is used to initialize state variables in a contract. The constructor is called only once, when a contract is first created. It is in general used to set initial values. A constructor can be either `public` or `internal`.
+A constructor in Solidity is a special function that is used to initialize the state of a contract and perform some initialization logic. The constructor is called only once, when a contract is deployed on the blockchain. A constructor can be either `public` or `internal`.
 
 This code defines a "constructor":
 ``` js
@@ -105,10 +109,12 @@ This code defines a "constructor":
 36     }
 ```
 -	Line 33 prints out via Hardhat a message with the address of the account that paid the gas fees to deploy the smart contract on the blockchain.
--	Line 34 sets the variable `owner` to the address of the account that paid the gas fees to deploy the smart contract on the blockchain.
--	Line 35 emits an event. This practice is recommended whenever the state of the contract is changed. The log can be viewed in the Remix console when you expand "Debug".
+-	Line 34 sets the variable `owner` to the address of that account.
+-	Line 35 emits an event. This practice is recommended whenever the state of the contract is changed. The log can be viewed in the Remix Console Panel when you expand "Debug".
 
 ## 1.7	Function `changeOwner`
+Reminder: a function is called by a transaction, and/or is called by another function called by a transaction.
+
 The code says
 ``` js
 42     function changeOwner(address newOwner) public isOwner {
@@ -116,7 +122,7 @@ The code says
 44        owner = newOwner;
 45    }
 ```
--	Line 42 shows the use of the `isOwner` modifier. Remember: if the address of the message sender (the account that calls this function) is not the address of the account that deployed the smart contract, the function will revert and not execute.
+-	Line 42 shows the use of the `isOwner` modifier. Remember: if the address of the message sender (the account that paid for this transaction) is not the address of the account that deployed the smart contract or not the address delegated to by a previous `owner`, the function will revert and not execute.
 -	Line 43 emits the event `OwnerSet`. It will log the current owner address and the new owner address. Note that the event name starts with an upper case letter.
 -	Line 44 changes the state variable `owner`. The next time we call this function from the new account, the modifier will accept it. We'll exercise this function later here.
 
@@ -136,15 +142,15 @@ The code says
 In the next step, we compile and deploy the smart contract. When running it, we'll learn to use the Remix built-in frontend to interact with the smart contract.
 
 # 2	Going further: deploy, run the smart contract 2_Owner.sol
-We repeat the previous exercise in `1_Storage.sol` to compile and deploy a smart contract in Remix. This time, we'll deploy manually instead of using the deploying script, this gives us more flexibility by decoupling compilation from deployment (and from running).
+We repeat the previous exercise in `1_Storage.sol` to compile and deploy a smart contract in Remix. This time, we'll deploy manually instead of using the deploying script. This is more usual way to deploy rather than using a script and gives us more flexibility by decoupling compilation from deployment (and from running).
 ## 2.1	How to compile and deploy
 To compile: 
 -	Check that the file `2_Owner.sol` is displayed in the Main panel. If not, in the Menu bar select the icon "File explorer" and in the Side panel select the file. 
--	If the auto-compile is on, the icon "Solidity compiler" in the Menu Bar should have a green tag. If not, something is wrong with the Solidity code, create a new default workspace and restart from it.
+-	If the auto-compile is on, the icon "Solidity compiler" in the Menu Bar should have a green tag. If not, you introduced inadvertently made an error with the Solidity code. We'll not debug here yet. Simply create a new default workspace and restart from it.
 
 To deploy: 
 -	In the Menu bar select the icon "Deploy & run transactions". 
--	In the Side panel check the field "CONTRACT" that it indeed says "Owner - contracts/2_Owner.sol" which means that the button "Deploy" will deploy the contract "Owner" in the file "contracts/2_Owner.sol".
+-	In the Side panel check the field "CONTRACT" that it indeed shows "Owner - contracts/2_Owner.sol" which means that the button "Deploy" will deploy the contract "Owner" in the file "contracts/2_Owner.sol".
 -	Expand the Console Panel to see more messages, we don't need the editor at this stage.
 -	Click on the orange button "Deploy". 
 ![Deploy](./images/26a-Deploy.png)
@@ -153,17 +159,17 @@ To deploy:
 Once the button "Deploy" is clicked, check the Console Panel. The message printed out is 
 ``` console
 creation of Owner pending...
-[vm]from: 0x5B3...eddC4to: Owner.(constructor)value: 0 wei  data: 0x608...70033logs: 1hash: 0x508...f24f2
+[vm] from: 0x5B3...eddC4 to: Owner.(constructor) value: 0 wei  data: 0x608...70033 logs: 1 hash: 0x508...f24f2
 console.log:
 Owner contract deployed by: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 ```
-Note the last 2 lines were printed out by the instruction line 33.
+Note the last 2 lines were printed out by the instruction `console.log` line 33.
 ``` js
         console.log("Owner contract deployed by:", msg.sender);
 ```
 We see that it is useful to print out values on the console during development, to verify execution.
 
-Observe that deploying a smart contract is nothing else than making a transaction with the blockchain. Referring to the section "Back to basics" we see that when we deploy, we made a transaction with the community of blockchain nodes, telling them "*I pay x gas fees and in exchange please you all record in the blockchain that this contract is now available for execution at address xxx*". We'll see the contract address value below. 
+Observe that deploying a smart contract is making a transaction with the blockchain. Referring to the section "Back to basics" we see that when we deploy, we made a transaction with the community of blockchain nodes, telling them  "*Folks, I pay x gas fees and in exchange please you all record in the blockchain that this contract is now available for execution at address xxx*". We'll see the contract address value below. 
 -	**Hint**: click on the caret "V" at the right of the button "Debug". The Console expands to display lengthy details of the deployment. We are not explaining them in detail yet today.
 ![Deploy](./images/26b-Deploy.png)
 
