@@ -173,13 +173,13 @@ Observe that deploying a smart contract is making a transaction with the blockch
 -	**Hint**: click on the caret "V" at the right of the button "Debug". The Console expands to display lengthy details of the deployment. We are not explaining them in detail yet today.
 ![Deploy](./images/26b-Deploy.png)
 
-## 2.3	How to interact with the contract from Remix
-Scroll down the Side Panel. See the text "Deployed Contracts   > OWNER AT 0XD91…39138 (MEMORY)" (screen copy below). This means "*among the deployed contracts, we are now looking at the one named "OWNER" that is deployed at memory location `0xd91…39138`*"
+## 2.3	How to interact with the contract from inside Remix
+Scroll down the Side Panel. See the text "Deployed Contracts   > OWNER AT 0XD91…39138 (MEMORY)" (screen copy below). This means "*among the deployed contracts, we are now looking at the contract named "OWNER" that is deployed at memory location `0xd91…39138`*"
 
 In the Side Panel, click on the caret left of the text "OWNER AT 0XD91…39138 (MEMORY)" to expand the information. Observe the orange button labelled "changeOwner" and the blue button labelled "getOwner". This is the Remix-generated frontend to interact with our smart contract `Owner`.
 -	A blue button is a function that does not change the state of the contract, a function qualified as `view` or `pure`. 
--	An orange button is a function that changes the state BUT doesn't accept any ETH, a function qualified as non-payable. 
--	A red button is a function that changes the state AND accepts ETH, a function qualified as `payable`. This kind of button also requires a "value" to be given in the field "VALUE" below the field "GAS LIMIT" before being pushed.
+-	An orange button is a function that changes the state **but** doesn't accept any ETH, a function qualified as non-payable. 
+-	A red button is a function that changes the state **and** accepts ETH, a function qualified as `payable`. This kind of button also requires a "value" to be given in the field "VALUE" below the field "GAS LIMIT" before being pushed.
 ![Deploy](./images/26c-Deploy.png)
 
 ## 2.4	Action on button "getOwner"
@@ -189,17 +189,17 @@ call to Owner.getOwner
 CALL
 [call]from: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 to: Owner.getOwner()data: 0x893...d20e8
 ```
-Note that, at the top of the Side panel, the address of the account that deployed and paid the gas fees is the same as the address the Console Panel is showing as address of the account considered as `owner`: `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`. It confirms that when we deployed the contract, the contract's `constructor` indeed stored the caller's address in the state variable `owner`.
+Note that, at the top of the Side panel, the address of the account that deployed and paid the gas fees is the same as the address the Console Panel is showing as address of the account currently considered as `owner`: `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`. It confirms that when we deployed the contract, the contract's `constructor` indeed stored the caller's address in the state variable `owner`.
 ![getOwner](./images/27-getOwner.png)
 
 ## 2.5	Action on button "changeOwner"
-To change the owner, we need an account address. For convenience, the sandbox blockchain of Remix also contains 15 pre-built Ethereum accounts, each one being pre-filled with 100 ETH.
+To change the owner, we need the new owner's account address. For convenience, the sandbox blockchain of Remix also contains 15 pre-built Ethereum accounts, each one being pre-filled with 100 ETH.
 
 We'll choose the 2nd account as new owner. We paste its address in the argument field for the function `changeOwner`. Then, with the 1st account as owner, we call this smart contract function from Remix. 
 
-Do as below:
+Detailed steps: do as below:
 
-Scroll up, to the top of the Side Panel "Deploy & run transactions". We see there a label "ACCOUNT" and a dropdown box. Open this dropdown box. We see that there are 15 accounts. The first one is checked. Verify its address and verify that it is the same as in the variable "`owner`". Its value is lower than 100 ETH because some was already spent to deploy the contract, `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`.
+Scroll up, to the top of the Side Panel "Deploy & run transactions". We see there a label "ACCOUNT" and a dropdown box. Open this dropdown box. We see that there are 15 accounts. The first one is checked. Verify its address and verify that it is the same as in the variable "`owner`" currently. Its value is lower than 100 ETH because some was already spent to deploy the contract, `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`.
 ![changeOwner](./images/28a-changeOwner.png)
 
 Select the second address, 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2. Click on the icon to the right, to copy it in the clipboard.
@@ -214,15 +214,15 @@ Scroll up to the top to select again the first address 0x5B38Da6a701c568545dCfcB
 Scroll down and click on the orange button "changeOwner". Observe the message from the console.
 ``` console
 transact to Owner.changeOwner pending ... 
-[vm]from: 0x5B3...eddC4to: Owner.changeOwner(address) 0xd91...39138value: 0 weidata: 0xa6f...35cb2logs: 1hash: 0xd1b...49448
+[vm] from: 0x5B3...eddC4 to: Owner.changeOwner(address) 0xd91...39138 value: 0 wei data: 0xa6f...35cb2 logs: 1 hash: 0xd1b...49448
 ```
-Notice the difference between the previous message from the blue button "getOwner" and this message from the orange button "changeOwner". It was previously a "`call`" and now it is a "`transact`".
+- Notice the difference between the previous message from the blue button "getOwner" and this message from the orange button "changeOwner". It was previously a "`call`" and now it is a "`transact`".
 
 To verify the new owner, click on the blue button "getOwner". Observe the message from the console.
 ``` console
 call to Owner.getOwner
 CALL
-[call]from: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4to: Owner.getOwner()data: 0x893...d20e8
+[call] from: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4 to: Owner.getOwner() data: 0x893...d20e8
 ```
 Check that the value has changed to `0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2`. It is the address of the 2nd account.
 ![changeOwner](./images/28e-changeOwner.png)
@@ -231,16 +231,22 @@ Observe that the 1st account has spent some additional ETH to execute the transa
 ![changeOwner](./images/28e1-changeOwner.png)
 
 ## 2.6	What if we call "changeOwner" from the 2nd account?
-What happens if we change to the 2nd account, copy-paste its address to the parameter field of the button "changeOwner" then click on this button, without changing again to the 1st account at the top of the Side Panel?
+What happens if we change to the 2nd account, copy-paste its address to the parameter field of the button "changeOwner" then hastily click on this button, instead of changing again to the 1st account at the top of the Side Panel?
 
 The function `changeOwner` will be called from the 2nd account, which is not yet the Owner. The modifier will detect it and revert the transaction. We can check in the console, and also by clicking on "getOwner": the owner hasn't changed.
 ![changeOwner](./images/28f-changeOwner.png)
+
+We meet here the notion of "signer" of a transaction. The address of the signer, in `msg.sender`, is a Solidity global variable that is available to all functions of a smart contract. In this example, the initial owner is the signer, who is the only one allowed to set the new owner to another address.
+
+**Exercise**: once the new owner is assigned as the 2nd account, try and make this 2nd account assign back ownership to the 1st account.
+
+**Hint**: the solution is hinted in the 2nd test case of the test script below.
 
 ## 2.7	Exercise: create and run a JavaScript test
 Duplicate the file "`test/storage.test.js`". Change the test cases to test that the address of the `owner` has changed after calling the function `changeOwner()`.
 
 **Hint**: the solution is
-```js
+``` js
  1  // Automated test of contract 2_Owner.sol
  2  // Right click on the script name and hit "Run" to execute
  3  const { expect } = require("chai");
@@ -292,15 +298,17 @@ Time Taken: 429 ms
 
 ## 2.8	What have we learned?
 -	We know how to manually deploy a smart contract and exercise the functions of this contract.
--	We know that Remix includes a welcome feature of Hardhat to print out contents of Solidity variables from smart contracts, `console.sol`.
+-	We know that Remix includes a welcome feature of Hardhat to print out contents of Solidity variables from inside smart contracts, `console.sol`.
 -	We know that to exercise contracts Remix has 15 accounts pre-filled with 100 ETH each. Each time we do a transaction we spend some, except when calling `view` or `pure` functions.
+- We learned the notion of "signer" of a transaction. We know how to choose which of the 15 pre-built accounts of Remix to sign, to execute a transaction and pay for it.
 -	We know that Remix generates a button for each function of a smart contract, along with input fields when the function needs parameters
 -	We know that blue buttons are for functions that don't modify the state of the contract, orange buttons are for functions that change the state but don't receive ETH and red buttons for those that receive ETH (are `payable`).
--	We know how to choose which of the 15 pre-built accounts of Remix to execute a transaction and pay for it.
 
 After a very elementary smart contract (the contract `1_Storage.sol`) that simply changes internal state, we have met a function that includes a `modifier` and a `constructor` (the contract `2_Owner.sol`).
 
-In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, the voting contract `3_Ballot.sol`. After that we are ready to change gears and build token-handling contracts, with the help of public libraries. After learning this, we can conclude the Solidity part of this tutorial by building Machu Picchu core. Remains to build the React frontend to finish this full-stack tutorial.
+In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, the voting contract `3_Ballot.sol`. 
+
+After that we are ready to change gears and build token-handling contracts, with the help of public libraries. After learning this, we can conclude the Solidity part of this tutorial by building Machu Picchu core. It remains to build the React frontend to finish this full-stack tutorial.
 
 
 *--> more to come*
