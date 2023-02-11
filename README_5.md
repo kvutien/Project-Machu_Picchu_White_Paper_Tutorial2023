@@ -159,7 +159,7 @@ Now, the winner is Proposal 1 because it has now 3 votes. Click on the blue butt
 -	We see that Remix generates automatically the frontend buttons required to execute transactions of a smart contract from inside Remix, although this frontend is quite basic.
 -	We understand the logic of the smart contract and can now start reading and understanding the code.
 
-Once we are comfortable coding a complete smart contract with Remix, the tutorial will expand and make a standalone frontend using React. But for this we will need to learn how to deploy out of Remix, in a test blockchain ("testnet"), so that the frontend application can make calls to it.
+Once we are comfortable coding a complete smart contract with Remix, the tutorial will expand and we will make a standalone frontend using React. But for this we will need to learn how to deploy out of Remix, in a test blockchain ("testnet"), so that the frontend application can make calls to it.
 
 For the moment, let's read and understand the code of `3_Ballot.sol`.
 
