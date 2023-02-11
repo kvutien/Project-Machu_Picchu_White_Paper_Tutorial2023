@@ -47,7 +47,7 @@ creation of Ballot pending...
 ![Ballot buttons](./images/33b-Ballot%20buttons.png)
 
 ## 1.3 Give right to vote
-Click on the blue button "`chairperson`". It is the getter function of the public variable `chairperson`. The Side Panel displays "`0:address: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`".  It's the address of the account used to deploy the contract.
+Click on the blue button "`chairperson`". It is the getter function of the public variable `chairperson`. The Side Panel displays "`0:address: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`".  It confirms that the chairperson is also the account used to deploy the contract.
 
 ![Ballot chairperson](./images/33c-Ballot%20chairperson.png)
 
