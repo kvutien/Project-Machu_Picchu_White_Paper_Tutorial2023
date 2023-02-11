@@ -24,7 +24,7 @@ It is recommended that you reload the whole Remix page to refresh the workspace 
 
 Here are instructions to deploy and run de contract. We'll see later, when we explain the code, the reason why we did these actions.
 
--	In the Side Panel, select the icon "File Explorer". Expand the folder `contracts`. Select the file `3_Ballot`.sol. It will open in the Main Panel. Close all the other tabs of the Main Panel.
+-	In the Side Panel, select the icon "File Explorer". Expand the folder `contracts`. Select the file `3_Ballot.sol`. It will open in the Main Panel. Close all the other tabs of the Main Panel.
 -	In the Side Panel, check that the icon "Solidity compiler" has a green tag, meaning that the smart contract compiled successfully. If not, activate the checkbox "Auto compile".
 -	In the Side Panel, Select the icon "Deploy & run transactions". Don't click yet on the "`Deploy`" button. Note that the field next to it says "`bytes32[] proposalNames`". This means that the constructor requires an array of `proposalNames` in format `bytes32`.
 -	Copy the following array and paste in the field: `["0x0000000000000000000000000000000000000000000000000000000000000031","0x0000000000000000000000000000000000000000000000000000000000000032","0x0000000000000000000000000000000000000000000000000000000000000033"]`
