@@ -248,7 +248,7 @@ describe("Automated testing Storage smart contract", function () {
   });
 });
 ```
-## 2.2	The Chai library, the Mocha test framework
+## 2.2	The Chai library and the Mocha test framework
 If you have some JavaScript background, you can notice that the test code contains some keywords like "`describe`" and "`it`" that are not standard JavaScript. They are part of the Mocha test framework.
 ``` javascript
 describe("Storage", function () {... });
@@ -268,7 +268,7 @@ describe("Automated testing Storage smart contract", function () {
 });
 ```
  
-Inside the "`it`" code blocks, there are also keywords that are not standard JavaScript: "`expect`", "`to`", "`equal`". They are part of the Chai test library.
+Inside the "`it`" code blocks, there are also keywords that are not standard JavaScript: "`expect`", "`to`", "`equal`". They are part of the Chai test assertions library.
 ``` javascript
     expect(something).to.equal(a_number);
 ``` 
@@ -312,7 +312,7 @@ Passed: 2
 Failed: 0
 Time Taken: 134 ms
 ```
-**Congratulations**. You have deployed for the second time your smart contract and executed successfully without leaving Remix your first automated test suite with 2 successful test cases (0 failed). Observe that the text you changed in "`describe`" code block is printed here.
+**Congratulations**. You have deployed for the second time your smart contract and executed successfully your first automated test suite with 2 successful test cases (0 failed), without leaving Remix. Observe that the text you changed in "`describe`" code block is printed here.
 
 You achieved in a few steps the tasks that in 2016 took me 9 months to accomplish.
 
