@@ -239,7 +239,7 @@ In line 27, we meet the Solidity construct named `mapping`. It is a table that i
 ``` js
 mapping(address => Voter) public voters;
 ```
-This voters mapping is used in the statement
+This `voters` mapping is used in the statement
 ``` js
 60             !voters[voter].voted,
 ```
