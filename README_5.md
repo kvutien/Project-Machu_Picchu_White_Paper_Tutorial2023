@@ -380,7 +380,7 @@ The keyword "`new`" initializes the contract instance by deploying the contract,
 Lines 21 and 22 use the Remix built-in Assert library to perform the tests. For more functions, see https://remix-ide.readthedocs.io/en/latest/assert_library.html.
 
 ## 3.6	Function `checkWinninProposalWithReturnValue`
-Note that the name of the 2 test functions is used directly by the plugin to generate the test outputs. Even the typo, the missing "`g`" is reproduced in the output.
+Note that the name of the 2 test functions is used directly by the plugin to generate the test outputs. Even the typo, the missing "`g`", is reproduced in the output.
 
 ## 3.7	More on tests in Remix
 Check https://medium.com/remix-ide/solidity-unit-testing-using-remix-tests-part-1-bc10ab1be864.
