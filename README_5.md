@@ -298,7 +298,7 @@ Lines 84-93 sets
 -	In line 85-88, if the delegate has voted, then the vote count of the proposal is incremented by the weight of the signer.
 -	In line 92, if the delegate hasn't yet voted, then the weight of the delegate is incremented by the weight of the signer.
 
-**Exercise quiz**: what happens when the signer of the delegation transaction doesn't have the right to vote? This is potentially a security hole. 🙂
+**Exercise quiz**: what happens when the signer of the delegation transaction doesn't have the right to vote? Nothing. The delegation transaction succeeds. This is potentially a security hole. 🙂
 
 ## 2.8	The vote 
 No new Solidity construct here.
