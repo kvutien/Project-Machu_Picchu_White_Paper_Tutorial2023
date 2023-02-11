@@ -294,7 +294,7 @@ Time Taken: 429 ms
 -	Line 8. The function `getSigners()` of the package `ethers` returns the array of all signers known, of which we keep the first 2.
 -	Line 9. `signer2` is an object, of which we call the getter function `getAddress()` to retrieve its 32-bytes address
 -	Line 20. We do the same to get the contract deployer's address.
--	Line 28 and 30. We have to use the function `connect()` to change the signer of the transaction (`msg.sender`) else by default the signer is the contract's deployer, which doesn't match anymore the current `owner`, in the modifier `isOwner`.
+-	Line 28 and 30. We have to use the function `connect()` to programmatically change the signer of the transaction (`msg.sender`) else by default the signer is the contract's deployer, which doesn't match anymore the current `owner`, in the modifier `isOwner`.
 
 ## 2.8	What have we learned?
 -	We know how to manually deploy a smart contract and exercise the functions of this contract.
@@ -306,9 +306,7 @@ Time Taken: 429 ms
 
 After a very elementary smart contract (the contract `1_Storage.sol`) that simply changes internal state, we have met a function that includes a `modifier` and a `constructor` (the contract `2_Owner.sol`).
 
-In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, the voting contract `3_Ballot.sol`. 
+In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, the voting contract [`3_Ballot.sol`](./README_5.md) and its automated test.
 
 After that we are ready to change gears and build token-handling contracts, with the help of public libraries. After learning this, we can conclude the Solidity part of this tutorial by building Machu Picchu core. It remains to build the React frontend to finish this full-stack tutorial.
 
-
-*--> more to come*
