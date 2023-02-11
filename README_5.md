@@ -42,7 +42,7 @@ creation of Ballot pending...
 
 ![Ballot Deploy](./images/33a-Ballot%20Deploy.png)
 
-- In the Side Panel, click on the caret ">" at the left of the dropdown box showing "BALLOT AT" to display the buttons used to interact with the contract. Clicking on each of them is equivalent to making a transaction from a frontend. There are 3 orange buttons "`delegate`", "`giveRightToVote`" and "`vote`", and 5 blue buttons "`chairperson`", "`proposals`", "`voters`", "`winnerName`" and "`winningProposal`".
+- In the Side Panel, click on the caret ">" at the left of the dropdown box showing "BALLOT AT 0X..." to display the buttons used to interact with the contract. Clicking on each of them is equivalent to making a transaction from a frontend. There are 3 orange buttons "`delegate`", "`giveRightToVote`" and "`vote`", and 5 blue buttons "`chairperson`", "`proposals`", "`voters`", "`winnerName`" and "`winningProposal`".
 
 ![Ballot buttons](./images/33b-Ballot%20buttons.png)
 
