@@ -306,7 +306,7 @@ Time Taken: 429 ms
 
 After a very elementary smart contract (the contract `1_Storage.sol`) that simply changes internal state, we have met a function that includes a `modifier` and a `constructor` (the contract `2_Owner.sol`).
 
-In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, [explain the voting contract `3_Ballot.sol`](./README_5.md) and its automated test.
+In the next step, we'll see a contract that implements some trusted business logic and starts to be somewhat useful, [**explain the voting contract** `3_Ballot.sol`](./README_5.md) and its automated test.
 
 After that we are ready to change gears and build token-handling contracts, with the help of public libraries. After learning this, we can conclude the Solidity part of this tutorial by building Machu Picchu core. It remains to build the React frontend to finish this full-stack tutorial.
 
