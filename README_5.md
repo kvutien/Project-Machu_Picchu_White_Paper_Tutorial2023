@@ -113,7 +113,7 @@ transact to Ballot.delegate pending ...
 ```
 This voter has 2 rights to vote, has not voted yet and did not delegate its right to vote. 
 
-Check the account A in the same manner: copy the address of A (`0xdD870fA1b7C4700F2BD7f44238821C26f7392148`), paste it next to the blue button "`voters`" and click on the button. The Side panel shows that this account still has right to vote (weight = `1`) but "has voted" (voted = "`true`") by delegating its vote to account C.
+Check the account A in the same manner: copy the address of A (`0xdD870fA1b7C4700F2BD7f44238821C26f7392148`), paste it next to the blue button "`voters`" and click on the button. The Side Panel shows that this account still has right to vote (weight = `1`) but "has voted" (voted = "`true`") by delegating its vote to account C.
 ```
 0:  uint256: weight 1
 1:  bool: voted true
