@@ -232,7 +232,7 @@ In lines 11-16 and 18-23, we meet a Solidity construct named `struct`. A `struct
 
 Line 29 declares an array of structs of type `Proposal` named `proposals`.
 
-As usual coding exercise, you may want to delete and retype the block of code in the editor. Eventual mistakes will be detected immediately by auto compile. This will make you familiar with Solidity.
+As usual coding exercise, you may want line by line to delete and retype the code in the editor. Eventual mistakes will be detected immediately by auto compile. This will make you familiar with Solidity.
 
 ## 2.4	The Solidity `mapping` construct
 In line 27, we meet the Solidity construct named `mapping`. It is a table that is used to map keys to values. For example, the following expression maps the account addresses to the voting characteristics of each account:
