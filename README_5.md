@@ -394,7 +394,7 @@ Check https://medium.com/remix-ide/solidity-unit-testing-using-remix-tests-part-
 ## 4.1	Where we are?
 We have progressed tremendously: starting from zero we practiced at this stage the most used Solidity constructs to make smart contracts. We did it from a browser, without any installation nor configuration.
 
-Maybe we are still inside a sandbox, and we barely scratched the surface of Solidity programming, but we have learned the equivalent of nine months of blockchain education, a few years ago when tools like Remix and the utility libraries were not available.
+Maybe we are still inside a sandbox, and we barely scratched the surface of Solidity programming, but we have learned the equivalent of nine months of blockchain education a few years ago, when tools like Remix and the utility libraries were not available.
 
 Remix is a professional-grade integrated development environment for Ethereum smart contracts. It can go very far in the development process, yet right from the box, it offers a lot to the apprentice smart contract programmer.
 
