@@ -85,7 +85,7 @@ Type again the comment `// SPDX-License-Identifier: GPL-3.0`. the warning disapp
 
 Let's try the next instruction, the pragma.
 
-## 1.4	The Solidity version qualifier "pragma"
+## 1.4	The Solidity version qualifier "`pragma`"
 The line 3 says
 ```
 pragma solidity >=0.7.0 <0.9.0;
@@ -113,7 +113,7 @@ Lines 5 to 9 contain comments in a special NatSpec format. We have seen above th
 ```
 * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
 ```
-## 1.6	The "contract" statement
+## 1.6	The "`contract`" statement
 The line 10 says
 ```
 contract Storage {
@@ -170,7 +170,7 @@ It detected an error at line 18-character 5, not at the line 17 where is missing
 
 We observe that the error message rarely spots the right origin of the mistake. It only marks where the compiler first spots a syntax error. This makes the auto-compile feature interesting: it warns immediately whenever we type an error so that its origin stands out more. Keep an eye on the compile icon frequently, to detect an error as early as possible.
 
-## 1.8	The function "store"
+## 1.8	The function "`store`"
 The line 18 says 
 ```
     function store(uint256 num) public {
@@ -189,7 +189,7 @@ Here we assign the calling argument "`num`" to the state variable "`number`". Th
 
 Try deleting the line to make an empty function (hint: it is perfectly legal).
 
-## 1.9	The function "retrieve"
+## 1.9	The function "`retrieve`"
 The line 26 says
 ```
     function retrieve() public view returns (uint256){
