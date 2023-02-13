@@ -2,6 +2,7 @@
 *(version January 2023)*
 
 # 1	Going further: understand the smart contract code of 1_Storage.sol
+We learn here how to code blockhain smart contracts using Remix. In the [**previous chapter**](./README_2.md), we saw our learning road, had an overview of Remix and deployed our first contract.
 
 In this section, we are doing our first steps in understanding and programming Solidity. We'll progress very slowly, so if you may want to skip reading if you know already Solidity. 
 
