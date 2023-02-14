@@ -191,7 +191,7 @@ In the Menu Bar, click on the icon "File explorer". Observe that a subfolder "ar
 
 Observe a very useful feature of the text editor: when you hover the mouse in the column with the line numbers, carets will appear to collapse ">" or expand "v" the sections of code between brackets "{ }". You'll use frequently this feature to explore comfortably the cascaded sections of code, in a top-down fashion.
 
-We used the button "**Compile 1_Storage.sol**", let's try now the other grey button "**Compile and Run script**". In the Console, observe that the following lines have been appended to the display:
+We used the button "**Compile 1_Storage.sol**"of the Side panel "Solidity compile". Let's try now the other grey button "**Compile and Run script**". In the Console, observe that the following lines have been appended to the display:
 ```
 running ./scripts/deploy_with_ethers.ts ...
 deploying Storage
