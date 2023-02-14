@@ -251,7 +251,7 @@ Consider that automated testing is as important as the smart contract itself. Tr
 -	we'll learn how to use battle-tested public libraries to implement token management smart contracts: fungible tokens, non-fungible tokens, multi-signature contract.
 -	once we get our feet wet in blockchain programming, we'll design the core Machu Picchu and implement its smart contracts.
 -	finally, we'll go out of Remix, in the usual complex environment of a developer when Remix did not exist. We'll learn also how to connect these tools to Remix.
--	At the end of this step this tutorial will end. You are well armed to progress further by yourself.
+-	At the end of this step this tutorial will terminate. You are well armed to progress further by yourself.
 
 Now let's understand the Solidity code of this simple smart contract "`1_Storage`":
 [**Understand the code of 1_Storage**](./README_3.md)
