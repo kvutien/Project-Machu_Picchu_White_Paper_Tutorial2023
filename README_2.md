@@ -101,7 +101,7 @@ The fourth pane is a **Console Panel**.
 
 For the moment, let's review the typical set of tools in a developer workflow. They are shown in the drawing below. 
 
-# 1.5	Developer workflow with Remix 
+## 1.5	Developer workflow with Remix 
 
 ![Dev workflow & tools](./images/14-Dev%20workflow%20&%20tools.png)
 
@@ -125,7 +125,7 @@ In the next step of this tutorial, we'll compile, deploy and test execution of o
 
 ![Remix extensions](./images/14a-Remix%20extensions.png)
 
-# 1.6	Deploy first smart contract using Remix 
+## 1.6	Deploy first smart contract using Remix 
 To start, reload the page https://remix.ethereum.org/. Every time you reload this page, you obtain a fresh environment. Now in the Menu Bar click on the icon "File explorer". 
 
 If you don't see the screen below, click again on the same icon: it's because the Side Panel toggles in and out whenever you click on its icons.
@@ -235,14 +235,14 @@ The address of this contract on this internal blockchain is `0xd9145CCE52D386f25
 
 You haven't executed the deployed contract yet. We'll do this later, in the section about automated tests.
 
-# 1.7	What have we learned?
+## 1.7	What have we learned?
 -	We made our first contact with an IDE, Integrated Development Environment. 
 You will meet similar IDE's (with the same organization in panels) when developing blockchain smart contracts with other tools like Truffle, Hardhat or Foundry, when coding in JavaScript a frontend like React or Angular, when coding an iPhone app with XCode, when coding an Android mobile app with Android Studio, and even when doing statistics with R, or doing Earth Observation with Google Earth Engine.
 -	We have seen that Remix includes by default everything to start learning developing in Solidity, the language for blockchain smart contracts. We will see later that it has also the required means to interface more elaborate programming tools.
 -	We have compiled, deployed and executed the simplest possible smart contract on a local blockchain. 
 -	We observed that Remix has right from the box more elaborate smart contracts including the required scaffolding to manage tokens and muti-signature wallets. We'll use them in Machu Picchu.
 
-# 1.8	Where do we go from here?
+## 1.8	Where do we go from here?
 In the next parts 
 	we'll understand the Solidity code of this simple smart contract code and the JavaScript code of its test script.
 Consider that automated testing is as important as the smart contract itself. Trusting the code is fundamental to using blockchains, so automated testing allows anybody to make sure that the code does what it is intended to do.
