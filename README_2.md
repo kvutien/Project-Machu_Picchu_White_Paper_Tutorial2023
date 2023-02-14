@@ -110,7 +110,7 @@ In general, the developer workflow involves the following tasks:
 -	Code, compile and deploy the frontend
 -	Store the code, manage the libraries and manage the versions of the code and of the libraries.
 
-We observe in the diagram that Remix, as a standalone web app, already includes many of the developer functions (shown in bold). Having them integrated ensures that their respective versions are always compatible. In addition, having Remix as a web app means that we always load and use the latest version with nothing to store locally.
+We observe in the diagram that the Remix standalone web app already includes many of the developer functions (shown in bold). Having them integrated ensures that their respective versions are always compatible. In addition, having Remix as a web app means that we always load and use the latest version with nothing to store locally.
 
 Here are how the Remix plugins that we saw in the screen shots above match the tools listed here
 -	File Storage ⇒ by default, browser's IndexedDB storage, can be configured otherwise
