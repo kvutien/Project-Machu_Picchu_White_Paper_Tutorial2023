@@ -7,7 +7,7 @@ Are you interested in blockchain programming, but hesitate to start, not being a
 [**Machu Picchu White Paper**](README_1.md)
 
 ##	Reading guide
-This tutorial can also be read in a reverse way, as a white paper of a humanitarian assistance project, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions. 
+This tutorial can also be read in a reverse way, as a white paper of a humanitarian assistance project, showing hands-on how current state-of-the-art technology can help change significantly the efficiency of humanitarian actions. 
   
 Finally, this document can serve as input for hackathon teams, as a guide and some prototype components, for them to use the purpose, hack advanced tools to a purposeful result and win.
 
