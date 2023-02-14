@@ -244,7 +244,7 @@ You will meet similar IDE's (with the same organization in panels) when developi
 
 ## 1.8	Where do we go from here?
 In the next parts 
-	we'll understand the Solidity code of this simple smart contract code and the JavaScript code of its test script.
+- we'll understand the Solidity code of this simple smart contract code and the JavaScript code of its test script.
 Consider that automated testing is as important as the smart contract itself. Trusting the code is fundamental to using blockchains, so automated testing allows anybody to make sure that the code does what it is intended to do.
 -	we'll progress by executing and examining another simple smart contract, similar to the first one and with two typical Solidity constructs: the `modifier` and the `constructor`. 
 -	we'll progress further with a smart contract that has a more elaborate data structure (struct, mapping, array) and implements a true purpose where blockchain apps shine, implementing a decentralized voting system.
