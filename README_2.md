@@ -62,7 +62,7 @@ To get our feet wet in blockchain programming we can take advantage of Remix. Re
 
 **Open https://remix.ethereum.org/ and do the exercises in parallel to the tutorial text.**
 
-In January 2023 we are using Remix version 0.29.2. By default, Remix opens in dark mode. To change to light mode, click the icon "*Settings*" (bottom left).
+In this January 2023 we are using Remix version 0.29.2. By default, Remix opens in dark mode. To change to light mode, click the icon "*Settings*" (bottom left).
 
 ![Default Remix](./images/10-Default%20Remix.png)
 
