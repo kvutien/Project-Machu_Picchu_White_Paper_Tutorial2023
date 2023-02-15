@@ -43,7 +43,7 @@ At the initial phase, Machu Picchu implementation will be ad-hoc and based on av
 Priority is given to functions to facilitate adoption by the field sponsor, then to functions useful to the PnD, then to the needs of the international Helper Institutions.
 
 ### 1.2.3.	**Acquisition & maintenance**, to guide the logistics
-- Network skills,
+- Network skills, Internet + SMS or UDDS
 - Blockchain and Decentralized Finance (DeFi) skills,
 - Earth Observation skills.
 
