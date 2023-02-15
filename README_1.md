@@ -9,8 +9,8 @@ Using Machu Picchu, all services to the **PnD** can use this trusted social netw
 Watch the 1-minute video here: https://youtu.be/joPwVTsLojU
 
 ##	Reading guide
-This white paper can also be read in a reverse way, as a tutorial to learn coding blockchain, showing hands-on how current state-of-the-art technology can help change significatively the efficiency of humanitarian actions.
-- After reading the white paper, if you —as a humanitarian executive— are convinced that this approach may help ease existing pains, you can follow the tutorial part, learning how to implement it for real. No prerequisite in programming.
+This white paper can also be read in a reverse way, as a tutorial to learn coding blockchain, showing hands-on how current state-of-the-art technology can help change significantly the efficiency of humanitarian actions.
+- After reading the white paper, if you —as a humanitarian executive— are convinced that this approach may help ease existing pains, you can follow the tutorial part, learning how to implement it for real. No prerequisite in programming required.
 
 - To read the blockchain programming Tutorial, go here: [*Tutorial Link*](./README_2.md)
   
@@ -18,12 +18,11 @@ Finally, this document can serve as input for hackathon teams, as a guide and so
 
 ![reading guide](./images/00-Reading%20guide.png)
 
-# 1.Machu Picchu Big Picture
+# 1. Machu Picchu Big Picture
 
 
 ## 1.2 *Strategy-Driving Policy* of Machu Picchu
-A Policy is in general composed of many steps, among them writing a White Paper. In case of Machu Picchu, 
-such a policy is composed of:
+A Policy is in general composed of many steps, among them writing a White Paper. In case of Machu Picchu, such a policy is composed of:
 
 ### 1.2.1	**White Paper**, to set out the final purpose of the action. 
 - Machu Picchu is a collaborative open-source project. It aims at producing and maintaining accurate data about the persons-in-need ("**PnD**").
@@ -44,9 +43,9 @@ At the initial phase, Machu Picchu implementation will be ad-hoc and based on av
 Priority is given to functions to facilitate adoption by the field sponsor, then to functions useful to the PnD, then to the needs of the international Helper Institutions.
 
 ### 1.2.3.	**Acquisition & maintenance**, to guide the logistics
-- Network skills
-- Blockchain and Decentralized Finance (DeFi) skills
-- Earth Observation 
+- Network skills,
+- Blockchain and Decentralized Finance (DeFi) skills,
+- Earth Observation skills.
 
 ### 1.2.4.	**Doctrine and a training strategy**, to bring coherency in operations and guide technological developments
 This part is open.
@@ -87,7 +86,7 @@ The two circuits are connected when the Helper Institutions collect funds and me
 
 For Helper Institutions to build programs, distribute funds and inform donors of the correct use of them, they are fed with information and reporting coming from local actors of Helper Associations. It is well established that the quality of these data is degraded on their way up, from the field operations to the headquarters of Helper Institutions.
 
-# 2.2	Identified Pains
+## 2.2	Identified Pains
 Helper Institutions and Local Helper Associations together are doing a wonderful job, but they are all hampered by the 2 following pains:
 
 ### Lack of reliable data about the target population:
@@ -185,6 +184,7 @@ The situation of Machu Picchu in February 2023 is as follows:
 ## 3.3	Machu Picchu Doctrine
 
 Doctrine is a list of priorities, of target markets (where we stop), and how to make trade-offs when a choice must be done. It guides the decisions to develop, deploy, train, acquire users and customers.
+
 Machu Picchu's implementation doctrine is to rely on Internet and SMS or UDDS, using decentralized, low cost – low consumption equipment (tablets, feature phone, Raspberry Pi).
 
 Development keeps the blockchain part reduced to the minimum required. All the business logic and business data are on the frontend mobiles or on the legacy architectures and servers of Helper Associations and Helper Institutions.
@@ -209,7 +209,7 @@ Each stakeholder has a specific concern to satisfy:
 -	The international Helper Institution main concern is "*how can I convince donors to fund my activities?*"
 
 To be successful, Machu Picchu addresses these concerns at every step.
--	For the **PnD** and in routine mode, Machu Picchu brings a simple way to receive financial aid from international Helper Institutions by the quality of personal data on the **PnD** and the easy way to distribute digital cash. However, at the beginning, there is no significant funding for this purpose. Machu Picchu could instore a simple decentralized lottery where can participate only the PnD who keep regular update of their data in Machu Picchu.
+-	For the **PnD** and in routine mode, Machu Picchu brings a simple way to receive financial aid from international Helper Institutions by the quality of personal data on the **PnD** and the easy way to distribute digital cash. However, at the beginning, there is no significant funding for this purpose. Machu Picchu could instaure a simple decentralized lottery where can participate only the PnD who keep regular update of their data in Machu Picchu.
 -	For the local Helper Association, Machu Picchu brings a mobile app to allow the field staff to keep contact with the sponsored persons, and a low cost, no fuss and resilient server based on Single Board Computer (SBC) like a Raspberry Pi that uses less than 10 UAD per year of electricity and stores data for thousands of PnD as NTFS and blockchain records. 
 -	For the international Helper Institution, Machu Picchu is a source of reliable data, a channel to distribute aids, a transparent way to justify the use of donations 
 
