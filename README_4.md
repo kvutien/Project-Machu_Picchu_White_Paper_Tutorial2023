@@ -7,7 +7,7 @@ In this section, we are doing our first steps in understanding and programming S
 
 This smart contract example introduces the most frequent and recommended Solidity programming constructs. We'll exercise more of Remix: not only compile and deploy, but also use its built-in frontend to interact with the smart contract.
 
-We'll progress faster than when explaing "`1_Storage.sol`", but if you may still want to skip reading this section if you know already Solidity.
+We'll progress faster than when explaining "`1_Storage.sol`", but if you may still want to skip reading this section if you know already Solidity.
 
 Reminder: In the following, to get the most profit from this tutorial and the Solidity auto-compile, after reading each line of code and its explanation remember to delete the line of code in the editor and type it again yourself. You'll learn from your typing mistakes.
 
@@ -163,7 +163,7 @@ creation of Owner pending...
 console.log:
 Owner contract deployed by: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 ```
-Note the last 2 lines were printed out by the instruction `console.log` line 33.
+Note the last 2 lines were printed out by the instruction `console.log` in line 33.
 ``` js
         console.log("Owner contract deployed by:", msg.sender);
 ```
@@ -291,7 +291,7 @@ Failed: 0
 Time Taken: 429 ms
 ```
 **Explanation**: We meet here some new ethers functions:
--	Line 8. The function `getSigners()` of the package `ethers` returns the array of all signers known, of which we keep the first 2.
+-	Line 8. The function `getSigners()` of the package `ethers` returns the array of all signers known, of which we keep the first 2 accounts.
 -	Line 9. `signer2` is an object, of which we call the getter function `getAddress()` to retrieve its 32-bytes address
 -	Line 20. We do the same to get the contract deployer's address.
 -	Line 28 and 30. We have to use the function `connect()` to programmatically change the signer of the transaction (`msg.sender`) else by default the signer is the contract's deployer, which doesn't match anymore the current `owner`, in the modifier `isOwner`.
