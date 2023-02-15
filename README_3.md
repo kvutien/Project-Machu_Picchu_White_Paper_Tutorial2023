@@ -1,13 +1,13 @@
 # Project-Machu Picchu Tutorial - Understand the code [1]
 *(version January 2023)*
 
-# 1	Going further: understand the smart contract code of 1_Storage.sol
-We learn here how to code blockhain smart contracts using Remix. In the [**previous chapter**](./README_2.md), we saw our learning road, had an overview of Remix and deployed our first contract.
+We learn here how to code blockhain smart contracts using Remix. In the [**previous chapter**](./README_2.md), we talked about our roadmap, had an overview of Remix and deployed our first contract.
 
 In this section, we are doing our first steps in understanding and programming Solidity. We'll progress very slowly, so if you may want to skip reading if you know already Solidity. 
 
-In the following, to get the most profit from this tutorial, after reading each line of code and its explanation remember to go to the Remix code editor, delete the code and type it back yourself to get used with the exact syntax.
+In the following, to get the most profit from this tutorial, after reading each line of code and its explanation, go to the Remix code editor, delete the code and type it back yourself to get used with the exact syntax.
 
+# 1	Going further: understand the smart contract code of 1_Storage.sol
 ## 1.1	The full code
 We'll explain the code line by line. The full code is
 ``` javascript
@@ -42,7 +42,7 @@ contract Storage {
 }
 ```
 ## 1.2	Practice editing and compiling the code
-Here are how we will proceed:
+Here is how we will proceed:
 -	We activate Remix' auto-compilation feature, to immediately check the Solidity code as soon as it is entered.
 -	We create a new workspace to work on and that we can dispose of, to revert to the origin in case of mistake.
 -	For each keyword introduced here, we delete the corresponding instruction, we see how the Remix auto-compile complaints (warning or error). Then we type in the instruction ourselves. We may make possible typing mistakes that the auto-compile will detect. We correct our typing until the instruction is correct.
@@ -81,7 +81,7 @@ UNLICENSED" for non-open-source code. Please see https://spdx.org for more infor
 
 ![SPDX missing](./images/21-SPDX%20missing.png)
 
-Type again the comment `// SPDX-License-Identifier: GPL-3.0`. the warning disappears. If you are curious, do a web search for "SPDX license".
+Type again the comment `// SPDX-License-Identifier: GPL-3.0`. The warning disappears. If you are curious, do a web search for "SPDX license".
 
 Let's try the next instruction, the pragma.
 
@@ -95,7 +95,7 @@ Delete it. The "Solidity compiler" icon bears a red badge. The warning message i
 Warning: Source file does not specify required compiler version! Consider adding "pragma solidity ^0.8.7;"
 --> contracts/1_Storage.sol
 ```
-Without the "pragma" instruction, Remix can't know which compiler version to use. The warning message suggests using version 0.8.7. The pragma in original code specified "*higher or equal to 0.7.0 and strictly lower than 0.9.0*". We'll see later that when we restrict to a specific compiler version, the compiler will complaint if our code makes contains a library source file that specifies a different version. So it is preferable to set a range of versions.
+Without the "pragma" instruction, Remix can't know which Solidity compiler version to use. The warning message suggests using version 0.8.7. The pragma in original code meant "*higher or equal to 0.7.0 and strictly lower than 0.9.0*". We'll see later that when we restrict to a specific compiler version, the compiler will complaint if our code contains a library source file that specifies a different version. So it is preferable to set a range of versions.
 
 Retype the original instruction, with the pragma and without the ending semi-colon "`;`" and check the error message because this is the most frequent typing mistake. It says:
 ```
@@ -140,7 +140,7 @@ contracts/1_Storage.sol:29:1:
 29 | }
 | ^
 ```
-It detected an error at the last line, line 29-character 1, the closing bracket. It's because we deleted the opening bracket "{" in the instruction much earlier at line 10.
+It detected an error, but at the last line, line 29-character 1, the closing bracket. It's because we deleted the opening bracket "{" in the instruction much earlier at line 10.
 Retype the correct instruction. The error message disappears.
 
 ## 1.7	The state variables
@@ -148,7 +148,7 @@ Expand the contract code block. The line 12 says
 ```
     uint256 number;
 ```
-We declare here a state variable called "`number`". It is called "state" because it is part of the state of the contract. It is reachable by all functions of this smart contract. 
+We declare here a state variable called "`number`". The variable is called "state variable" because it is part of the state of the contract. It is reachable by all functions of this smart contract. 
 
 Its type is "unsigned integer of 256 bits". The default variable size in Solidity is 256 bits. It matches the way the low-level Ethereum Virtual Machine (EVM) aligns memory data.
 
@@ -214,7 +214,7 @@ Try commenting out each word and see the error message.
 -	A local variable is known only inside the scope it is declared.
 -	You know some keywords used in writing function calls.
 
-There is still a lot to learn but now it's time to read and understand the JavaScript test. Automated testing is essential when developing blockchain smart contracts.
+There is still a lot to learn on this topic but now it's time to read and understand the JavaScript test. Automated testing is essential when developing blockchain smart contracts.
 
 # 2	Going further: understand the JavaScript test code
 In this section, we start understanding and programming JavaScript automated tests. We'll progress very slowly because Test Driven Development (TDD) and automated testing are essential in blockchain programming. A smart contract potentially executes in thousands of Ethereum nodes. TDD makes sure that whatever business logic that has been specified has been implemented as desired in the contract.
@@ -297,7 +297,7 @@ describe("Purpose of the test suite", inline_function);
 ```
 The first argument is a text string describing the purpose of the test suite. Try changing the text, for example from "*Storage*" into "*Automated testing Storage smart contract*".
 
-Then in the Main Panel text editor select the tab "1_Storage.sol", change the NatSpec comment `@custom:dev-run-scripts` into
+Then in the Main Panel text editor select the tab "1_Storage.sol", change the NatSpec comment `@custom:dev-run-scripts ./scripts/deploy_with_ethers.ts` into
 ``` javascript
  * @custom:dev-run-script ./tests/storage.test.js
 ``` 
@@ -353,7 +353,7 @@ The `async` qualifier of the function instructs JavaScript to prepare to handle 
 
 What happens if you forgot the keyword `await`?
 
-Try editing out the keyword `await` in line 8, run the script and check what is printed out. Also, to be cool, modify the describe text into "*Show when we forget an await...*". To run the script, in the Side Panel, right-click on the name of the file and choose "Run".
+Try editing out the keyword `await` in line 8, run the script and check what is printed out. Also, to be cool, modify the `describe` text into "*Show when we forget an await...*". To run the script, in the Side Panel, right-click on the name of the file and choose "Run".
 ![Run script](./images/25-Run%20script.png)
 
 The printout says
