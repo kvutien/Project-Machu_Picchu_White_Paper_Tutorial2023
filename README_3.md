@@ -121,7 +121,7 @@ contract Storage {
 When we hover the mouse in the line numbering column, clicking on the caret "`>`"collapses the code block from line 10 to line 20. This feature is very useful when analyzing large contracts, to focus on specific code blocks and collapse the rest. A large blue dot on the left signals a collapsed block. It also serves as a debug breakpoint in Remix.
 ![contract code block](./images/23-contract%20code%20block.png)
 
-In Solidity, name of smart contracts starts with an upper-case letter, never a lower-case and never a digit. Try prefixing the name with a digit like "`contract 1Storage`". You'll see an ERROR at line 10. It will be the same if you prefix with a lower-case character.
+In Solidity, names of smart contracts start with an upper-case letter, never a lower-case and never a digit. Try prefixing the name with a digit like "`contract 1Storage`". You'll see an ERROR at line 10. It will be the same if you prefix with a lower-case character.
 ```
 ParserError: Expected identifier but got 'ILLEGAL'
 -->
@@ -140,7 +140,7 @@ contracts/1_Storage.sol:29:1:
 29 | }
 | ^
 ```
-It detected an error, but at the last line, line 29-character 1, the closing bracket. It's because we deleted the opening bracket "{" in the instruction much earlier at line 10.
+It detected an error, but at the last line, line 29-character 1, the closing bracket. It's because we deleted the opening bracket "`{`" in the instruction much earlier at line 10.
 Retype the correct instruction. The error message disappears.
 
 ## 1.7	The state variables
@@ -185,7 +185,7 @@ The line 19 says
 ```
         number = num;
 ```
-Here we assign the calling argument "`num`" to the state variable "`number`". The variable "`num`" is local to the function "`store`" and is unknown to the function "`retrieve`". Try writing an instruction using "`num`" in another function, for example "`retrieve`" and check the compile error message.
+Here we assign the calling argument "`num`" to the state variable "`number`". The variable "`num`" is local to the function "`store`" and is unknown to the function "`retrieve`". Try writing an instruction using "`num`" in another function, for example in function "`retrieve`" and check the compile error message.
 
 Try deleting the line to make an empty function (hint: it is perfectly legal).
 
@@ -250,7 +250,7 @@ describe("Automated testing Storage smart contract", function () {
 });
 ```
 ## 2.2	The Chai library and the Mocha test framework
-If you have some JavaScript background, you can notice that the test code contains some keywords like "`describe`" and "`it`" that are not standard JavaScript. They are part of the Mocha test framework.
+If you have some JavaScript background, you may notice that the test code contains some keywords like "`describe`" and "`it`" that are not standard JavaScript. They are part of the Mocha test framework.
 ``` javascript
 describe("Storage", function () {... });
 it("test initial value", async function () {... });
@@ -279,7 +279,7 @@ The line 2 says
 ``` javascript
 const { expect } = require("chai");
 ``` 
-This is a standard JavaScript syntax used to import in the script a library (`chai`) but only from this library the package `expect`. We'll use it in line 20.
+This is a standard JavaScript syntax used to import in the script a library (`chai`) limited to only the package `expect` from this library. We'll use it in line 20.
 
 ## 2.4	Import the Hardhat blockchain development framework
 The line 3 says
@@ -335,7 +335,7 @@ The `it` code block is itself another function call with 2 arguments like the `d
     some code
   });
 ```
-The first 3 instructions are common to both test cases. They use asynchronous programming to interact with the blockchain. Together, they hide a lot of complex code that had to be learned in early days in 2016. They deploy the smart contract `Storage` on the blockchain, retrieve its JavaScript interface in the variable `storage`, ready to be used in the test assertions. 
+The first 3 instructions in the code block are repeated in both test cases. They use asynchronous programming to interact with the blockchain. Together, they hide a lot of complex code that had to be learned in early days in 2016. They deploy the smart contract `Storage` on the blockchain, retrieve its JavaScript interface in the variable `storage`, ready to be used in the test assertions. 
 
 The `async` qualifier of the function instructs JavaScript to prepare to handle some asynchronous calls in the following code block. Inside the code block we indeed see two function calls of type `await`. 
 ``` javascript
@@ -348,7 +348,7 @@ The `async` qualifier of the function instructs JavaScript to prepare to handle 
 -	line 6 says: "*hey, watch out, there will be some asynchronous function call(s) coming.*"
 -	line 7 says "*call the function `getContractFactory` of the package `ethers` and `await`, don't execute the next instruction until you receive the result back from `getContractFactory`*".
 -	line 8 says "*call the function `deploy` of the object named `Storage` (which happens to be the result of the previous line) and `await`, don't execute the next instruction until you receive the result back from `deploy`*".
--	line 9 says "*call the function deployed() of the object storage and await for the blockchain function to answer back*".
+-	line 9 says "*call the function `deployed()` of the object storage and await for the blockchain function to answer back*".
 -	line 10 says "*print out the `address` of the object `storage`*".
 
 What happens if you forgot the keyword `await`?
@@ -401,7 +401,7 @@ However, a raw comparison would not be possible because the number returned by `
    ✓ test updating and retrieving updated value (97 ms)
 Passed: 2
 ```
-- The number 0 is represented by the hex value 0x38. This makes a direct comparison with 0 fail.
+- The `bigNumber` 0 is represented by the hex value 0x38. This makes a direct comparison with 0 fail.
 
 ## 2.8	The second `it` code block
 The code is
