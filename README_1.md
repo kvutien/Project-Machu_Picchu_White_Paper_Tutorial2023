@@ -4,7 +4,7 @@
 ##	What is Machu Picchu?
 Machu Picchu is a decentralized and trusted social network, where the Persons-in-Need ("**PnD**") post their profiles, their activities, their needs, while keeping ownership of their data. 
 
-Using Machu Picchu, all services to the **PnD** can use this trusted social network to provide assistance to these beneficiaies via decentralized protocols and smart contracts.
+Using Machu Picchu, all services to the **PnD** can use this trusted social network to provide assistance to these beneficiaries via decentralized protocols and smart contracts.
 
 Watch the 1-minute video here: https://youtu.be/joPwVTsLojU
 
@@ -32,7 +32,7 @@ A Policy is in general composed of many steps, among them writing a White Paper.
 ### 1.2.2.	**Implementation strategy**, to identify the skills and industry to be acquired and supported
 Machu Picchu is open source. It uses the following technologies:
 -	The Internet and the mobile network to distribute and collect data (SMS or UDDS),
--	The mobile apps to implement the frontend (user interface) and avoid serving screens from centralized computers,
+-	The mobile apps to implement the frontend (user interface) and avoid serving user screens from centralized computers,
 -	The blockchain and decentralized storage to achieve resilient data distribution and to implement the backend processes,
 -	The low-cost Single Board Computers of type Raspberry Pi to run decentralized storage and to validate transactions,
 -	The Earth Observation and open mapping data to monitor crop status,
@@ -127,7 +127,7 @@ The current technologies allow affordable networking, affordable computing and a
 Let's illustrate with a story how it works:
 -	The Persons-in-Need ("PnD") post and maintain their data using SMS on a simple cellular phone, in conjunction with a “sponsor person” who has a smartphone and a tablet and can access the blockchain. The data is secured by use of multi-signature involving the cryptographic keys of the PnD and of the sponsor person. This sponsor person can be their chief of village, their trusted NGO field staff, or any trusted person who has a smartphone or a tablet that can do blockchain transactions.
 -	The credentials of the PnD (name, signature, location, owned money etc.) are stored on the blockchain. The data are stored on IPFS (a decentralized storage that is backed-up on several “nodes”) or equivalent. The cryptographic digests (the “hash”) of the data, required to access it, are stored on the blockchain, as well as a list of entities allowed to read the data. This keeps the data under ownership of the PnD and complies with the GDPR data protection regulation.
--	Any helper organization can agree with a PnD and the sponsor person to have read access to the data of this person-in-need against a promise of payment of some Cash & Voucher assistance. This promise is materialized as a blockchain fungible token. The higher the quality (accuracy, age of data, match with the purpose) the higher the promised payment. This rewards the PnD and the sponsor person to maintain the data up to date and in timely fashion.
+-	Any helper organization can agree with a PnD and the sponsor person to have read access to the data of this person-in-need against a promise of payment of some Cash & Voucher assistance. This promise is materialized as a blockchain fungible token. The higher the quality (accuracy, age of data, match with the purpose) the higher the promised payment. This rewards and motivates the PnD and the sponsor person to maintain the data up to date and in timely fashion.
 
 ![Machu Picchu solution](./images/03-Machu%20Picchu%20solution.png)
 
@@ -199,7 +199,7 @@ The doctrine of Machu Picchu is to proceed bottom-up. This means that focus is m
 
 The progression is:
 -	In the initial phase, Machu Picchu implementation is ad-hoc and based on available funding and needs. With developers-for-Good, Machu Picchu participates to hackathons and makes prototypes of interesting technologies (see chapter "Machu Picchu Implementation" above).
--	After the hackathons, re-engineer the prototypes to make reusable toolbox components, document their usage, make tutorials. Priority is given to functions to facilitate adoption by the field sponsor / field partner, then to functions useful to the Person-in-Need (PnD), then to the needs of the international Helper Institutions.
+-	After the hackathons, re-engineer the prototypes to make reusable toolbox components, document their usage, make tutorials. Priority is given to functions to facilitate adoption by the field sponsor and field partner, then to functions useful to the Person-in-Need (PnD), then to the needs of the international Helper Institutions.
 -	When the toolbox is sufficiently populated to make viable prototypes, convince one or several local Helper Associations to give a try by deploying an usable pilot on the field. They will organize the workflow and training. If needed, they will raise the fundings necessary for field operations.
 -	When the pilots made their proofs, together with local Helper Associations, convince International Helper Institutes to join and add functions as required. These organizations will also develop if needed donor reporting apps using blockchain explorers, for their own specifications.
 ### 3.4.2	What's in for each stakeholder
@@ -213,7 +213,7 @@ To be successful, Machu Picchu addresses these concerns at every step.
 -	For the local Helper Association, Machu Picchu brings a mobile app to allow the field staff to keep contact with the sponsored persons, and a low cost, no fuss and resilient server based on Single Board Computer (SBC) like a Raspberry Pi that uses less than 10 UAD per year of electricity and stores data for thousands of PnD as NTFS and blockchain records. 
 -	For the international Helper Institution, Machu Picchu is a source of reliable data, a channel to distribute aids, a transparent way to justify the use of donations 
 
-To start immediately, Machu Picchu includes a free satellite Earth Observation tool to monitor the crops of these persons, anticipate the evolutions and actions required. An example prototype exists, "Steve Observer": https://youtu.be/joPwVTsLojU.
+To start immediately, Machu Picchu includes a free satellite Earth Observation mobile-based tool to monitor the crops of these persons, anticipate the evolutions and actions required. An example prototype exists, "Steve Observer": https://youtu.be/joPwVTsLojU.
 
 ![Machu Picchu Earth Observation](./images/05a-Machu%20Picchu%20Steve%20Observer.png)
 
@@ -223,7 +223,7 @@ Data is stored as flat data (noSQL), in large quantities, in resilient IPFS-like
 ### 3.4.3	The final target: inclusive finance
 When a critical mass of Persons-in-Need (PnD) is achieved (a lot), Machu Picchu can start and implement open-source Decentralized Finance (DeFi) and Decentralized Insurance (DeInsur). 
 
-True Decentralized Finance and Decentralized Insurance are ancestral practices. The difference between Traditional Finance and Decentralized Finance has been described in the above chapter "White Paper", section "Possible solution by Decentralized Finance".
+True Decentralized Finance and Decentralized Insurance are ancestral practices. The difference between Traditional Finance (centralized) and Decentralized Finance (using AMM) has been described in the above chapter "White Paper", section "Possible solution by Decentralized Finance".
 -	**Decentralized payment**: Bitcoin, 2008
 -	**Decentralized loans**: MakerDAO, 2017
 -	**Decentralized trading**: Uniswap, 2018

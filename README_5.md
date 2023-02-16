@@ -243,7 +243,7 @@ This `voters` mapping is used in the statement
 ``` js
 60             !voters[voter].voted,
 ```
-It refers to the voting status `voted` of the account having its address mapped in `voter`.
+This statement refers to the voting status `voted` of the account having its address mapped in `voters`.
 
 ## 2.5	The Solidity `array` construct
 In line 29, we meet the Solidity construct that defines an array of variable size. A fixed-sized array is declared with its size (such as `ExampleArray[8] example1;`) while a variable-sized array, like here, is declared with empty brackets, such as
