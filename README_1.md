@@ -109,7 +109,7 @@ In Traditional Finance, a Market Maker is an entity that has deep pockets enough
 
 In Traditional Finance, Market Makers must have deep pockets to average out the risks among a large number of customers. Wealth means power, this explains why governments created strict reporting, reserve and solvency regulations to protect the customers.
 
-With the blockchain's fast settlement and low cost of transaction, researchers have designed protocols where any person who is interested can participate using their own **Liquidity Pool** (LP) managed by a smart contract called an **Automated Market Maker** (AMM). The latter makes sure that the money of each LP is locked and dedicated to a sole purpose.
+With the blockchain's **fast secure settlement** and **low cost of transaction**, researchers have designed protocols where any person who is interested can participate using their own **Liquidity Pool** (LP) managed by a smart contract called an **Automated Market Maker** (AMM). The latter makes sure that the money of each LP is locked and dedicated to a sole purpose.
 
 - *We observe that this is a **community-based practice** that **existed since centuries** in antique and medieval rural communities, for banking, self-help and goods exchange.*
 
