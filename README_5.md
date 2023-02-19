@@ -382,8 +382,11 @@ Lines 21 and 22 use the Remix built-in Assert library to perform the tests. For 
 ## 3.6	Function `checkWinninProposalWithReturnValue`
 Note that the name of the 2 test functions is used directly by the plugin to generate the test outputs. Even the typo, the missing "`g`", is reproduced in the output.
 
+![Ballot test](./images/36a-Ballot%20test.png)
+
 ## 3.7	More on tests in Remix
-Check https://medium.com/remix-ide/solidity-unit-testing-using-remix-tests-part-1-bc10ab1be864.
+- 	In the Side Panel "Solidity Unit Testing" try clicking on the button "Generate". It will generate a template Solidity test smart contract, with detailed comments how to use this template.
+- Check https://medium.com/remix-ide/solidity-unit-testing-using-remix-tests-part-1-bc10ab1be864.
 
 ## 3.8	What have we learned here?
 -	Remix has a built-in plugin to make Solidity tests.
