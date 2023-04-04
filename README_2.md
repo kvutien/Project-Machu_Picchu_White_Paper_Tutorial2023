@@ -126,6 +126,7 @@ In the next step of this tutorial, we'll compile, deploy and test execution of o
 ![Remix extensions](./images/14a-Remix%20extensions.png)
 
 ## 1.6	Deploy first smart contract using Remix 
+### 1.6.1 What is a Remix workspace?
 To start, reload the page https://remix.ethereum.org/. Every time you reload this page, you obtain a fresh environment. Now in the Menu Bar click on the icon "File explorer". 
 
 If you don't see the screen below, click again on the same icon: it's because the Side Panel toggles in and out whenever you click on its icons.
@@ -142,6 +143,7 @@ Explanations:
 -	the folder "scripts" also contains the code to run tests. Automated testing is indispensable when coding smart contracts, to make sure that security best practices are respected. The default workspace contains a testing script in Solidity and another testing script in JavaScript. Both methods of testing are useful.
 -	the folder "**.deps**" contains the pre-loaded Solidity libraries that are "imported" in this workspace from a contract code located somewhere else.
 
+### 1.6.2 Deploy first smart contract, no coding required
 Our learning progression starts with the first contract, the simplest. We'll analyze the code later. Let's compile and deploy it on the blockchain. For this, in the pane "File Explorer", click on the folder "contracts" to expand it, and click on the file named "`1_Storage.sol`". In the Main Panel we see that the Text Editor displays a new tab with the Solidity code of this contract.
 
 ![contract Storage](./images/17-contract%20Storage.png)
