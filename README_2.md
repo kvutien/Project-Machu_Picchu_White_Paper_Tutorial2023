@@ -149,7 +149,7 @@ Our learning progression starts with the first contract, the simplest. We'll ana
 ![contract Storage](./images/17-contract%20Storage.png)
 
 Then on the Menu Bar, click on the icon "Solidity compiler". We keep the default parameters. We'll explain them later. There are 2 buttons:
--	**Compile 1_Storage.sol**: the IDE detects which file is in the active tab of the Text Editor and proposes to compile it. If you activate a different tab, this button will change name.
+-	**Compile 1_Storage.sol**: the IDE detects which file is in the active tab of the Text Editor and proposes to compile it. If you activate a different tab in the Text Editor pane, this button will change name.
 -	**Compile and Run script**.
 
 ![Remix compile](./images/18-Remix%20compile.png)
