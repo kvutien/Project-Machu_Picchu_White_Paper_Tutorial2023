@@ -180,7 +180,7 @@ Click on the blue button "**Compile 1_Storage.sol**". In the Menu Bar, the Compi
 ![Remix compile](./images/18a-Remix%20compile.png)
 
 -	a Drop-down menu of already compiled contracts. In this example we only have one contract "Storage" coming from the file "`1_Storage.sol`"
--	a Button "Publish on Ipfs": publish the ABI and Bytecode on IPFS [^1] for use by other contracts
+-	a Button "Publish on Ipfs": publish the ABI [^1] and Bytecode on IPFS for use by other contracts
 -	a Button "Publish on Swarm": publish the ABI and Bytecode on Swarm for use by other contracts
 -	a Button "Compilation Details": select more information to be displayed in the Side Panel
 -	icons to copy to clipboard respectively the JSON of the ABI or the Bytecode of the smart contract, for use in an eventual script.
